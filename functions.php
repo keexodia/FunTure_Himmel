@@ -1,8 +1,9 @@
 <?php
 //error_reporting(0);
-define('FREELANCEBANK_THEME_VERSION', 'freelancebank 1.0.0')
+define('FREELANCEBANK_THEME_VERSION', 'freelancebank 1.0.0');
 function my_setup()
 {
+    add_theme_support('menus');//メニューの有効化
     add_theme_support('post-thumbnails'); // アイキャッチ画像を有効化
     add_theme_support('automatic-feed-links'); // 投稿とコメントのRSSフィードのリンクを有効化
     add_theme_support('title-tag'); // タイトルタグ自動生成
@@ -25,13 +26,13 @@ function my_setup()
         wp_deregister_script('jquery');
       // jQueryの読み込み
         wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.5.1.min.js', "", "1.0.1" );
-        wp_enqueue_style( 'Noto', '//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap' );
-        wp_enqueue_script( 'slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', "", "1.0.1" );
-        wp_enqueue_style( 'slick',  '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', "", "1.0.1" );
-        wp_enqueue_style( 'slick-theme',  '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array(), '1.0.1' );
-        wp_enqueue_script( 'inview', get_template_directory_uri() . '/js/jquery.inview.js?20210326', array( 'jquery' ), '1.0.1', true );
-        wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js?20210616', array( 'jquery' ), '1.0.1', true );
-        wp_enqueue_style( 'style-name', get_template_directory_uri() . '/css/style.css?20210902', array(), '1.0.1' );
+        wp_enqueue_style( 'Farro', '//fonts.googleapis.com/css2?family=Farro:wght@400;700&display=swap' );
+        wp_enqueue_script( 'swiper', '//unpkg.com/swiper@7/swiper-bundle.min.js', "", "1.0.1" );
+        wp_enqueue_style( 'swiper',  '//unpkg.com/swiper@7/swiper-bundle.min.css', "", "1.0.1" );
+        //wp_enqueue_style( 'slick-theme',  '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array(), '1.0.1' );
+        //wp_enqueue_script( 'inview', get_template_directory_uri() . '/js/jquery.inview.js?20210326', array( 'jquery' ), '1.0.1', true );
+        wp_enqueue_script( 'main', get_template_directory_uri() . '/library/js/script.js', array(), '1.0.1', true );
+        wp_enqueue_style( 'style-name', get_template_directory_uri() . '/library/css/style.css', array(), '1.0.1' );
     }
     add_action('wp_enqueue_scripts', 'my_script_init');
 
@@ -63,3 +64,26 @@ function my_setup()
         return $init_array;
     }
     );
+
+    //navMenuの追加
+    function register_freelance_menus() {
+      register_nav_menus( array( //複数のナビゲーションメニューを登録する関数
+      //'「メニューの位置」の識別子' => 'メニューの説明の文字列',
+        'main-menu' => 'Main Menu',
+        'main-menu-sp' => 'Main Menu SP',
+        'footer-menu'  => 'Footer Menu',
+      ) );
+    }
+    add_action( 'after_setup_theme', 'register_freelance_menus' );
+
+    // wp_nav_menuのliにclass追加
+    function add_additional_class_on_li($classes, $item, $args)
+    {
+      if (isset($args->add_li_class)) {
+        $classes['class'] = $args->add_li_class;
+      }
+      return $classes;
+    }
+    add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+    //グローバルナビメニューの第二階層にクラス付与
