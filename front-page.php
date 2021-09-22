@@ -43,7 +43,7 @@
                 </p>
                 </div>
                 <div class="c-btn c-btn-long p-top-vision__btn">
-                <a href="">view more</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>vision-mission/">view more</a>
                 </div>
             </div>
             <div class="p-top-vision__wrap">
@@ -60,142 +60,89 @@
     <section class="l-top-news p-top-news">
         <div class="l-news">
             <div class="p-top-news__wrapper">
-            <div class="p-top-news__guide">
-                <h2 class="c-title p-top-news__title">
-                news
-                <span>ニュース</span>
-                </h2>
-                <div class="c-btn c-btn-short p-top-news__btn">
-                <a href="">view more</a>
+                <div class="p-top-news__guide">
+                    <h2 class="c-title p-top-news__title">
+                    news
+                    <span>ニュース</span>
+                    </h2>
+                    <div class="c-btn c-btn-short p-top-news__btn">
+                    <a href="">view more</a>
+                    </div>
                 </div>
-            </div>
-            <div class="p-top-news__article">
-                <div class="p-top-news__group">
-                <div class="p-top-news__infomation">
-                    <p class="p-top-news__date">2021/10/01</p>
-                    <p class="c-category p-top-news__category">メディア</p>
-                    <p class="c-category p-top-news__category">斉田季実治</p>
+                <div class="p-top-news__article">
+                    <div class="p-top-news__group">
+                    <div class="p-top-news__infomation">
+                        <p class="p-top-news__date">2021/10/01</p>
+                        <p class="c-category p-top-news__category">メディア</p>
+                        <p class="c-category p-top-news__category">斉田季実治</p>
+                    </div>
+                    <div class="p-top-news__post">
+                        <a href=""> お知らせ文が入りますお知らせ文が入りますお知らせ文が入ります</a>
+                    </div>
+                    </div>
+                    <div class="p-top-news__group">
+                    <div class="p-top-news__infomation">
+                        <p class="p-top-news__date">2021/10/01</p>
+                        <p class="c-category p-top-news__category">メディア</p>
+                        <p class="c-category p-top-news__category">斉田季実治</p>
+                    </div>
+                    <div class="p-top-news__post">
+                        <a href=""> お知らせ文が入りますお知らせ文が入りますお知らせ文が入ります</a>
+                    </div>
+                    </div>
+                    <div class="p-top-news__group">
+                    <div class="p-top-news__infomation">
+                        <p class="p-top-news__date">2021/10/01</p>
+                        <p class="c-category p-top-news__category">メディア</p>
+                        <p class="c-category p-top-news__category">斉田季実治</p>
+                    </div>
+                    <div class="p-top-news__post">
+                        <a href=""> お知らせ文が入りますお知らせ文が入りますお知らせ文が入ります</a>
+                    </div>
+                    </div>
+                    <div class="p-top-news__group">
+                    <div class="p-top-news__infomation">
+                        <p class="p-top-news__date">2021/10/01</p>
+                        <p class="c-category p-top-news__category">メディア</p>
+                        <p class="c-category p-top-news__category">斉田季実治</p>
+                    </div>
+                    <div class="p-top-news__post">
+                        <a href=""> お知らせ文が入りますお知らせ文が入りますお知らせ文が入ります</a>
+                    </div>
+                    </div>
+                    <div class="p-top-news__group">
+                    <div class="p-top-news__infomation">
+                        <p class="p-top-news__date">2021/10/01</p>
+                        <p class="c-category p-top-news__category">メディア</p>
+                        <p class="c-category p-top-news__category">斉田季実治</p>
+                    </div>
+                    <div class="p-top-news__post">
+                        <a href=""> お知らせ文が入りますお知らせ文が入りますお知らせ文が入ります</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="p-top-news__post">
-                    <a href=""> お知らせ文が入りますお知らせ文が入りますお知らせ文が入ります</a>
-                </div>
-                </div>
-                <div class="p-top-news__group">
-                <div class="p-top-news__infomation">
-                    <p class="p-top-news__date">2021/10/01</p>
-                    <p class="c-category p-top-news__category">メディア</p>
-                    <p class="c-category p-top-news__category">斉田季実治</p>
-                </div>
-                <div class="p-top-news__post">
-                    <a href=""> お知らせ文が入りますお知らせ文が入りますお知らせ文が入ります</a>
-                </div>
-                </div>
-                <div class="p-top-news__group">
-                <div class="p-top-news__infomation">
-                    <p class="p-top-news__date">2021/10/01</p>
-                    <p class="c-category p-top-news__category">メディア</p>
-                    <p class="c-category p-top-news__category">斉田季実治</p>
-                </div>
-                <div class="p-top-news__post">
-                    <a href=""> お知らせ文が入りますお知らせ文が入りますお知らせ文が入ります</a>
-                </div>
-                </div>
-                <div class="p-top-news__group">
-                <div class="p-top-news__infomation">
-                    <p class="p-top-news__date">2021/10/01</p>
-                    <p class="c-category p-top-news__category">メディア</p>
-                    <p class="c-category p-top-news__category">斉田季実治</p>
-                </div>
-                <div class="p-top-news__post">
-                    <a href=""> お知らせ文が入りますお知らせ文が入りますお知らせ文が入ります</a>
-                </div>
-                </div>
-                <div class="p-top-news__group">
-                <div class="p-top-news__infomation">
-                    <p class="p-top-news__date">2021/10/01</p>
-                    <p class="c-category p-top-news__category">メディア</p>
-                    <p class="c-category p-top-news__category">斉田季実治</p>
-                </div>
-                <div class="p-top-news__post">
-                    <a href=""> お知らせ文が入りますお知らせ文が入りますお知らせ文が入ります</a>
-                </div>
-                </div>
-            </div>
             </div>
 
+        <?php if( have_rows('news_banner') ): ?>
             <div class="p-top-news__about p-top-about">
-            <div class="p-top-about__wrap">
-                <!-- loop -->
-                <div class="c-card p-top-about__card">
-                <a href="">
-                    <div class="c-card-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/lecture.jpg" alt="" />
-                    </div>
-                    <h3 class="c-card-title">
-                    講演
-                    <span>lecture</span>
-                    </h3>
-                </a>
-                </div>
-                <!-- /.loop -->
-
-                <div class="c-card p-top-about__card">
-                <a href="">
-                    <div class="c-card-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/lecture.jpg" alt="" />
-                    </div>
-                    <h3 class="c-card-title">
-                    メディア
-                    <span>media</span>
-                    </h3>
-                </a>
-                </div>
-                <div class="c-card p-top-about__card">
-                <a href="">
-                    <div class="c-card-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/lecture.jpg" alt="" />
-                    </div>
-                    <h3 class="c-card-title">
-                    執筆
-                    <span>writing</span>
-                    </h3>
-                </a>
-                </div>
-                <div class="c-card p-top-about__card">
-                <a href="">
-                    <div class="c-card-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/lecture.jpg" alt="" />
-                    </div>
-                    <h3 class="c-card-title">
-                    インタビュー
-                    <span>interview</span>
-                    </h3>
-                </a>
-                </div>
-                <div class="c-card p-top-about__card">
-                <a href="">
-                    <div class="c-card-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/lecture.jpg" alt="" />
-                    </div>
-                    <h3 class="c-card-title">
-                    書籍
-                    <span>book</span>
-                    </h3>
-                </a>
-                </div>
-                <div class="c-card p-top-about__card">
-                <a href="">
-                    <div class="c-card-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/lecture.jpg" alt="" />
-                    </div>
-                    <h3 class="c-card-title">
-                    YouTube
-                    <span>movie</span>
-                    </h3>
-                </a>
+                <div class="p-top-about__wrap">
+                    <!-- loop -->
+                    <?php while( have_rows('news_banner') ): the_row();?>
+                        <div class="c-card p-top-about__card">
+                            <a href="<?php echo get_sub_field('link');?>">
+                                <div class="c-card-img">
+                                <img src="<?php echo get_sub_field('photo');?>" alt="<?php echo get_sub_field('title');?>" />
+                                </div>
+                                <h3 class="c-card-title">
+                                <?php echo get_sub_field('title');?>
+                                <span><?php echo get_sub_field('subtitle');?></span>
+                                </h3>
+                            </a>
+                        </div>
+                    <?php endwhile; ?>
                 </div>
             </div>
-            </div>
+        <?php endif;?>
         </div>
     </section>
     <!-- /.news -->
@@ -208,77 +155,32 @@
             <span>サービス</span>
             </h2>
             <div class="p-top-service__wrap">
-            <!-- loop -->
-            <div class="c-card-tile p-top-service__card">
-                <div class="c-card-img-tile">
-                <img src="<?php echo get_template_directory_uri(); ?>/library/images/service1.png" alt="" />
-                </div>
-                <div class="c-card-txt">
-                <h3 class="c-card-title-tile">講演</h3>
-                <p class="c-card-lead">
-                    気象や防災をはじめ、家族やコミュニケーションに関する講演や研修プログラムを提供しています。
-                </p>
-                <div class="c-btn c-btn-short c-card-tile-btn">
-                    <a href="">view more</a>
-                </div>
-                </div>
-            </div>
-            <!-- /.loop -->
+                <!-- loop -->
+                <?php
+                    $args = array(
+                        'post_type'      => 'service',
+                        'posts_per_page' => 5,
+                    );
+                    $posts = get_posts($args);
+                    foreach ( $posts as $post ): setup_postdata( $post );
+                ?>
 
-            <div class="c-card-tile p-top-service__card">
-                <div class="c-card-img-tile">
-                <img src="<?php echo get_template_directory_uri(); ?>/library/images/ear.png" alt="" />
+                <div class="c-card-tile p-top-service__card">
+                    <div class="c-card-img-tile">
+                        <img src="<?php echo get_field("photo"); ?>" alt="<?php the_title(); ?>" />
+                    </div>
+                    <div class="c-card-txt">
+                    <h3 class="c-card-title-tile"><?php the_title(); ?></h3>
+                    <p class="c-card-lead">
+                        <?php the_excerpt(); ?>
+                    </p>
+                    <div class="c-btn c-btn-short c-card-tile-btn">
+                        <a href="<?php the_permalink();?>">view more</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="c-card-txt">
-                <h3 class="c-card-title-tile">宇宙天気</h3>
-                <p class="c-card-lead">
-                    最新の活動情報、専門知見やデータをもとに、宇宙天気の今後の必要性についてお知らせします。
-                </p>
-                <div class="c-btn c-btn-short c-card-tile-btn">
-                    <a href="">view more</a>
-                </div>
-                </div>
-            </div>
-            <div class="c-card-tile p-top-service__card">
-                <div class="c-card-img-tile">
-                <img src="<?php echo get_template_directory_uri(); ?>/library/images/service2.png" alt="" />
-                </div>
-                <div class="c-card-txt">
-                <h3 class="c-card-title-tile">ヒンメルゼミ</h3>
-                <p class="c-card-lead">
-                    「多様性を楽しむ社会の創造」を目指して、様々な話題を自由参加のゼミ形式で運営しています。
-                </p>
-                <div class="c-btn c-btn-short c-card-tile-btn">
-                    <a href="">view more</a>
-                </div>
-                </div>
-            </div>
-            <div class="c-card-tile p-top-service__card">
-                <div class="c-card-img-tile">
-                <img src="<?php echo get_template_directory_uri(); ?>/library/images/service3.png" alt="" />
-                </div>
-                <div class="c-card-txt">
-                <h3 class="c-card-title-tile">彩り家族コミュニティ</h3>
-                <p class="c-card-lead">
-                    社会の最小単位である家族。家族の未来をひらくための話し合いについて一緒に考えましょう。
-                </p>
-                <div class="c-btn c-btn-short c-card-tile-btn">
-                    <a href="">view more</a>
-                </div>
-                </div>
-            </div>
-            <div class="c-card-tile p-top-service__card">
-                <div class="c-card-img-tile">
-                <img src="<?php echo get_template_directory_uri(); ?>/library/images/service4.png" alt="" />
-                </div>
-                <div class="c-card-txt">
-                <h3 class="c-card-title-tile">コーチング/コンサルティング</h3>
-                <p class="c-card-lead">1to1、およびグループにてコーチング、コンサルティングを実施しています。</p>
-                <div class="c-btn c-btn-short c-card-tile-btn">
-                    <a href="">view more</a>
-                </div>
-                </div>
-            </div>
+                <?php endforeach; wp_reset_postdata();?>
+                <!-- /.loop -->
             </div>
         </div>
     </section>
@@ -377,59 +279,37 @@
     <section class="l-link p-link">
         <div class="l-inner p-link__inner">
             <div class="p-link__wrap">
-            <div class="p-link__item">
-                <a class="p-link__block">
-                <div class="p-link__sns">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/ic_twitter.png" alt="twitter" />
+            <?php if( have_rows('sns_banner') ): ?>
+                <?php while( have_rows('sns_banner') ): the_row();?>
+                <div class="p-link__item">
+                    <a class="p-link__block">
+                        <div class="p-link__sns">
+                            <img src="<?php echo get_sub_field('sns_logo');?>" alt="twitter" />
+                        </div>
+                        <div class="p-link__txt">
+                            <?php if(get_sub_field('text_or_photo')):?>
+                                <p class="p-link__name"><?php echo get_sub_field('upper_text');?></p>
+                            <?php else:?>
+                                <p class="p-link__txt--img"><img src="<?php echo get_sub_field('upper_img');?>" alt="" /></p>
+                            <?php endif;?>
+                            <p class="p-link__name"><?php echo get_sub_field('bottom_text');?></p>
+                        </div>
+                    </a>
                 </div>
-                <div class="p-link__txt">
-                    <p class="p-link__name">Kimiharu Saita</p>
-                    <p class="p-link__name">OFFICIIAL Twitter</p>
+                <?php endwhile; ?>
+            <?php endif;?>
+            <?php if( have_rows('company_banner') ): ?>
+                <?php while( have_rows('company_banner') ): the_row();?>
+                <div class="p-link__item p-link__item--asset">
+                    <a class="p-link__block p-link__block--asset">
+                    <div class="p-link__asset">
+                        <img src="<?php echo get_sub_field('company_logo');?>" alt="ablad" />
+                    </div>
+                    </a>
+                    <p class="p-link__guide"><?php echo get_sub_field('company');?></p>
                 </div>
-                </a>
-            </div>
-
-            <div class="p-link__item">
-                <a class="p-link__block">
-                <div class="p-link__sns">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/facebook.png" alt="twitter" />
-                </div>
-                <div class="p-link__txt">
-                    <p class="p-link__txt--img"><img src="<?php echo get_template_directory_uri(); ?>/library/images/link-logo.png" alt="" /></p>
-                    <p class="p-link__name">OFFICIIAL Facebook</p>
-                </div>
-                </a>
-            </div>
-
-            <div class="p-link__item">
-                <a class="p-link__block">
-                <div class="p-link__sns">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/line.png" alt="twitter" />
-                </div>
-                <div class="p-link__txt">
-                    <p class="p-link__name">Himmel公式</p>
-                    <p class="p-link__name">彩り家族</p>
-                </div>
-                </a>
-            </div>
-
-            <div class="p-link__item p-link__item--asset">
-                <a class="p-link__block p-link__block--asset">
-                <div class="p-link__asset">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/ablad.png" alt="ablad" />
-                </div>
-                </a>
-                <p class="p-link__guide">ABラボ</p>
-            </div>
-
-            <div class="p-link__item p-link__item--asset">
-                <a class="p-link__block p-link__block--asset">
-                <div class="p-link__asset">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/rwc.png" alt="ablad" />
-                </div>
-                </a>
-                <p class="p-link__guide">宇宙天気予報センター</p>
-            </div>
+                <?php endwhile; ?>
+            <?php endif;?>
             </div>
         </div>
     </section>
