@@ -16,7 +16,7 @@
                     </div>
                     </div>
                     <div class="swiper-slide p-slid__img">
-                    <div class="p-slid__image"><img src="<?php echo get_template_directory_uri(); ?>/library/images/ear.jpg"" alt="/" /></div>
+                    <div class="p-slid__image"><img src="<?php echo get_template_directory_uri(); ?>/library/images/ear.png"" alt="/" /></div>
                     <div class="p-top-main__lead">
                         <h1 class="p-top-main__title">宇宙天気</h1>
                         <p class="p-top-main__txt">未来の災害に備えます</p>
@@ -37,16 +37,6 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-            </div>
-
-
-            <div class="swiper p-top-main__slid p-slid">
-            <div class="swiper-wrapper p-slid__item">
-                <div class="swiper-slide p-slid__img"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/slide03.jpg" alt="/" /></a></div>
-                <div class="swiper-slide p-slid__img"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/slide02.jpg" alt="/" /></a></div>
-                <div class="swiper-slide p-slid__img"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/slide01.jpg" alt="/" /></a></div>
-            </div>
-            <div class="swiper-pagination"></div>
             </div>
             <!-- /.slider -->
             <!-- <div class="p-top-main__lead">
