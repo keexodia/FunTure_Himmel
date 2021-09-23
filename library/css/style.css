@@ -1626,7 +1626,7 @@ nav.globalMenuSp.active {
 .swiper-pagination-fraction {
 	bottom: 0.8125rem;
 	display: inline;
-	left: 29.75%;
+	left: 43.75%;
 	text-align: inherit;
 	width: auto;
 }
@@ -1668,7 +1668,7 @@ nav.globalMenuSp.active {
 .p-top-main__slid {
 	height: 81.5vh;
 	max-height: 44.125rem;
-	width: 79.2%;
+	width: 100%;
 }
 
 .p-top-main__lead {

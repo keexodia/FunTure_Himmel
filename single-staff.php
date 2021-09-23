@@ -9,68 +9,57 @@
             <div class="p-single-staff__wrap">
             <div class="p-single-staff__item">
                 <div class="p-single-staff__img">
-                <img src="<?php echo get_template_directory_uri(); ?>/library/images/staff33.png" alt="/" />
+                <img src="<?php echo get_field('photo');?>" alt="<?php the_title();?>" />
                 </div>
             </div>
-        <div class="p-single-staff__lead">
-            <!-- ここから下囲ってるp-single-staff__lead以外はfront/top-staff部分と一緒 -->
-            <div class="p-top-staff__name">
-                <p class="p-top-staff__en">Eiko Saita</p>
-                <p class="p-top-staff__ja">斉田英子</p>
+            <div class="p-single-staff__lead">
+                <!-- ここから下囲ってるp-single-staff__lead以外はfront/top-staff部分と一緒 -->
+                <div class="p-top-staff__name">
+                    <p class="p-top-staff__en"><?php echo get_field('name_english');?></p>
+                    <p class="p-top-staff__ja"><?php the_title();?></p>
                 </div>
                 <div class="p-top-staff__text">
-                <div class="p-top-staff__txt">
-                    <p class="p-top-staff__txt">中央大学法学部 兼任講師</p>
-                    <p class="p-top-staff__txt">博士（学術）</p>
-                    <p class="p-top-staff__txt">コーチ</p>
-                    <p class="p-top-staff__txt">国家資格キャリアコンサルタント</p>
-            </div>
-            <div class="p-top-staff__sns">
-                    <div class="p-top-staff__icon p-top-staff__facebook">
-                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/facebook.png" alt="facebook" /></a>
+                    <?php if( have_rows('achievement') ): ?>
+                    <div class="p-top-staff__txt">
+                        <?php while( have_rows('achievement') ): the_row();?>
+                            <?php if(get_sub_field('achievement_1')):?><p class="p-top-staff__txt"><?php echo get_sub_field('achievement_1');?></p><?php endif;?>
+                            <?php if(get_sub_field('achievement_2')):?><p class="p-top-staff__txt"><?php echo get_sub_field('achievement_2');?></p><?php endif;?>
+                            <?php if(get_sub_field('achievement_3')):?><p class="p-top-staff__txt"><?php echo get_sub_field('achievement_3');?></p><?php endif;?>
+                            <?php if(get_sub_field('achievement_4')):?><p class="p-top-staff__txt"><?php echo get_sub_field('achievement_4');?></p><?php endif;?>
+                        <?php endwhile; ?>
                     </div>
-
-                    <div class="p-top-staff__icon p-top-staff__instagram">
-                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/instagram.png" alt="instagram" /></a>
+                    <?php endif;?>
+                    <?php if( have_rows('sns') ): ?>
+                    <div class="p-top-staff__sns">
+                    <?php while( have_rows('sns') ): the_row();?>
+                    <?php
+                        $sns = get_sub_field('sns');
+                        if($sns == 'facebook'){
+                            $sns_class = 'p-top-staff__facebook';
+                        }elseif($sns == 'itwitter'){
+                            $sns_class = 'p-top-staff__twitter';
+                        }elseif($sns == 'instagram'){
+                            $sns_class = 'p-top-staff__instagram';
+                        }elseif($sns == 'note'){
+                            $sns_class = 'p-top-staff__note';
+                        }elseif($sns == 'memo'){
+                            $sns_class = 'p-top-staff__memo';
+                        }
+                    ?>
+                        <div class="p-top-staff__icon <?php echo $sns_class;?>">
+                            <a href="<?php echo get_sub_field('link');?>">
+                                <img src="<?php echo get_template_directory_uri(); ?>/library/images/<?php echo get_sub_field('sns');?>.png" alt="<?php echo get_sub_field('sns');?>" />
+                            </a>
+                        </div>
+                    <?php endwhile; ?>
                     </div>
-                    <div class="p-top-staff__icon p-top-staff__note">
-                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/note.png" alt="note" /></a>
-                    </div>
-                    <div class="p-top-staff__icon p-top-staff__memo">
-                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/memo.png" alt="memo" /></a>
-                    </div>
+                    <?php endif;?>
                 </div>
-                </div>
-                <!-- /. -->
+                    <!-- /. -->
             </div>
         </div>
-
         <div class="p-single-staff__information">
-            <p class="p-single-staff__txt">
-                1974年、長崎市生まれ<br />
-                奈良女子大学大学院にて都市計画における住民参加に関する研究で博士号取得<br />
-                2002年～2004年デンマーク政府奨学生等としてコペンハーゲン大学大学院政治学研究科客員研究員
-                2005年4月～2016年3月、熊本県立大学 環境共生学部 居住環境学科 准教授<br />
-                大学では、都市計画、都市居住政策学、比較都市文化論、居住環境デザイン実習等を担当<br />
-                2008年～2016年熊本学園大学経済学部非常勤講師（自治体経営論、まちづくり論）
-            </p>
-            <p class="p-single-staff__txt">
-                三男児の母。2009年長男、2012年次男、2018年三男を出産。2010年4月から夫婦の仕事の都合により、
-                子どもたちが乳幼児期の約6年間、熊本と東京（夫）をほぼ毎週末、往復する生活を送る。2016年4月に長男が小学校にあがることを機に
-                、これまでの仕事、生活についてとことん掘り下げる。「キャリアのセカンドステージ」は
-                家族の最大幸福の追求とともにある（ファミリーキャリア）と確信し、二拠点生活を解消、大学を退職し東京へ移動。
-            </p>
-            <p class="p-single-staff__txt">
-                2016年4月～2017年3月、東京大学大学院（新領域創成科学研究科
-                社会文化環境学専攻）にて客員共同研究員として在籍。2017年4月～2019年3月、明治学院大学（社会学部付属研究所）研究員。
-                2019年4月〜、中央大学法学部兼任講師（「都市政策論」）
-            </p>
-            <p class="p-single-staff__txt">
-                「まちづくりはひとづくり」であり、成熟都市にふさわしい自立した個人を育む教育全般についても関心を寄せている。
-                コーチ、キャリアコンサルタントとしても活動
-            </p>
-            <p class="p-single-staff__txt">所属学会：日本都市計画学会、日本都市住宅学会、家族社会学会</p>
-            </div>
+            <?php the_content();?>
         </div>
     </section>
     <!-- /. -->
@@ -80,13 +69,13 @@
         <div class="l-inner p-single-staff-link__inner">
             <div class="p-single-staff-link__wrap">
             <div class="p-single-staff-link__item">
-                <a href="/">講演</a>
+                <a href="<?php echo get_field('kouen_link');?>">講演</a>
             </div>
             <div class="p-single-staff-link__item">
-                <a href="/">メディア</a>
+                <a href="<?php echo get_field('media_link');?>">メディア</a>
             </div>
             <div class="p-single-staff-link__item">
-                <a href="/">書籍</a>
+                <a href="<?php echo get_field('books_link');?>">書籍</a>
             </div>
             </div>
         </div>
@@ -94,20 +83,22 @@
     <!-- /. -->
 
     <!-- list -->
+    <?php //if(get_field('Academic_treatises')||get_field('Social_activities')):?>
     <section class="l-single-staff-list p-single-staff-list">
         <div class="p-single-staff-list__inner">
             <ul class="p-single-staff-list__item">
-            <li><a href="">学術論文等</a></li>
-            <li><a href="">社会活動等</a></li>
+            <?php if(get_field('Academic_treatises')):?><li><a href="<?php echo get_field('Academic_treatises');?>">学術論文等</a></li><?php endif;?>
+            <?php if(get_field('Social_activities')):?><li><a href="<?php echo get_field('Social_activities');?>">社会活動等</a></li><?php endif;?>
             </ul>
         </div>
     </section>
+    <?php //endif;?>
     <!-- /. -->
     <!-- breadcrumb -->
         <div class="l-breadcrumb-area">
         <ul class="p-breadcrumb">
             <li><a href="">HOME</a></li>
-            <li><a href="">ページ名</a></li>
+            <li><a href=""><?php the_title();?></a></li>
         </ul>
     </div>
     <!-- /.breadcrumb -->
