@@ -4,10 +4,10 @@
 		<div class="p-footer__inner">
 			<div class="p-footer__nav">
 			<ul class="p-footer__item">
-				<li class="p-footer__list"><a href="">HOME</a></li>
-				<li class="p-footer__list"><a href="">ビジョン・ミッション</a></li>
+				<li class="p-footer__list"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
+				<li class="p-footer__list"><a href="<?php echo esc_url( home_url( '/' ) ); ?>vision-mission/">ビジョン・ミッション</a></li>
 				<li class="p-footer__list"><a href="">スタッフ</a></li>
-				<li class="p-footer__list"><a href="">会社概要</a></li>
+				<li class="p-footer__list"><a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">会社概要</a></li>
 				<li class="p-footer__list"><a href="">ニュース</a></li>
 			</ul>
 			<ul class="p-footer__item">
@@ -24,7 +24,7 @@
 			</ul>
 			<ul class="p-footer__item">
 				<li class="p-footer__list"><a href="">プライバシーポリシー</a></li>
-				<li class="p-footer__list"><a href="">お問い合わせ</a></li>
+				<li class="p-footer__list"><a href="<?php echo esc_url( home_url( '/' ) ); ?>CONTACT/">お問い合わせ</a></li>
 			</ul>
 			</div>
 		</div>

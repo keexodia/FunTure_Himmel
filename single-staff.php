@@ -9,7 +9,7 @@
             <div class="p-single-staff__wrap">
             <div class="p-single-staff__item">
                 <div class="p-single-staff__img">
-                <img src="././assets/img/staff33.png" alt="/" />
+                <img src="<?php echo get_template_directory_uri(); ?>/library/images/staff33.png" alt="/" />
                 </div>
             </div>
         <div class="p-single-staff__lead">
@@ -27,17 +27,17 @@
             </div>
             <div class="p-top-staff__sns">
                     <div class="p-top-staff__icon p-top-staff__facebook">
-                    <a href=""><img src="././assets/img/facebook.png" alt="facebook" /></a>
+                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/facebook.png" alt="facebook" /></a>
                     </div>
 
                     <div class="p-top-staff__icon p-top-staff__instagram">
-                    <a href=""><img src="././assets/img/instagram.png" alt="instagram" /></a>
+                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/instagram.png" alt="instagram" /></a>
                     </div>
                     <div class="p-top-staff__icon p-top-staff__note">
-                    <a href=""><img src="././assets/img/note.png" alt="note" /></a>
+                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/note.png" alt="note" /></a>
                     </div>
                     <div class="p-top-staff__icon p-top-staff__memo">
-                    <a href=""><img src="././assets/img/memo.png" alt="memo" /></a>
+                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/memo.png" alt="memo" /></a>
                     </div>
                 </div>
                 </div>

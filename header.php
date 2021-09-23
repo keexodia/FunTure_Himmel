@@ -43,7 +43,7 @@
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>vision-mission/">VISION/MISSION</a>
 						</li>
 						<li class="p-header__list">
-						<a href="">ABOUT</a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">ABOUT</a>
 						</li>
 						<li class="p-header__list p-header__drower">
 						<a href="">SERVICE</a>
@@ -96,13 +96,13 @@
 				<nav class="globalMenuSp">
 				<ul class="p-header__item">
 					<li class="p-header__list">
-					<a href="">HOME</a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a>
 					</li>
 					<li class="p-header__list">
-					<a href="">VISION/MISSION</a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>vision-mission/">VISION/MISSION</a>
 					</li>
 					<li class="p-header__list">
-					<a href="">ABOUT</a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">ABOUT</a>
 					</li>
 					<li class="p-header__list p-header__drower">
 					<a href="">SERVICE</a>
@@ -123,7 +123,7 @@
 				</ul>
 				<ul>
 					<li class="p-header__list p-header__contact">
-					<a href="">CONTACT</a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>CONTACT/">CONTACT</a>
 					</li>
 				</ul>
 				</nav>
