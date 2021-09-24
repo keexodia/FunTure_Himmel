@@ -1976,6 +1976,7 @@ nav.globalMenuSp.active {
 	height: 0.5rem;
 	opacity: 1;
 	width: 3rem;
+	margin: 0px 5px;
 }
 
 .swiper-pagination-bullet-active {
@@ -1991,6 +1992,12 @@ nav.globalMenuSp.active {
 	left: 44.6%;
 	text-align: inherit;
 	width: auto;
+}
+
+.swiper-pagination-bullets{
+	left: 50%;
+    top: 98%;
+    transform: translate(-50%, -50%);
 }
 
 .p-top-about {
@@ -2016,7 +2023,7 @@ nav.globalMenuSp.active {
 }
 
 .p-top-main {
-	height: 81.5vh;
+	/*height: 81.5vh;*/
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 6.5625rem;
@@ -2025,7 +2032,7 @@ nav.globalMenuSp.active {
 }
 
 .p-top-main__slid {
-	height: 81.5vh;
+	/*height: 81.5vh;*/
 	max-height: 44.125rem;
 }
 
@@ -2542,6 +2549,11 @@ html:focus-within {
 
 }
 
+@media (max-width: 1024px) {
+	.p-header__item {
+		font-size: 0.775rem;
+	}
+}
 @media (min-width: 1024px) {
 
 html {
@@ -2974,11 +2986,11 @@ nav.globalMenuSp {
 }
 
 .main-content {
-	margin-top: 5rem;
+	margin-top: 3rem;
 }
 
 .p-top-main__slid {
-	height: 70vh;
+	/*height: 70vh;*/
 	width: 100%;
 }
 

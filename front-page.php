@@ -7,33 +7,13 @@
             <div class="swiper p-top-main__slid p-slid">
                 <div class="swiper-wrapper p-slid__item">
                     <div class="swiper-slide p-slid__img">
-                    <div class="p-slid__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/city.jpg"" alt="/" />
-                    </div>
-                    <div class="p-top-main__lead">
-                        <h1 class="p-top-main__title">気象・防災</h1>
-                        <p class="p-top-main__txt">確かな情報を伝えます</p>
-                    </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/slide01.jpg"" alt="/" />
                     </div>
                     <div class="swiper-slide p-slid__img">
-                    <div class="p-slid__image"><img src="<?php echo get_template_directory_uri(); ?>/library/images/ear.png"" alt="/" /></div>
-                    <div class="p-top-main__lead">
-                        <h1 class="p-top-main__title">宇宙天気</h1>
-                        <p class="p-top-main__txt">未来の災害に備えます</p>
-                        <div class="c-btn p-top-main__btn">
-                        <a href="">view more</a>
-                        </div>
-                    </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/slide02.jpg"" alt="/" />
                     </div>
                     <div class="swiper-slide p-slid__img">
-                    <div class="p-slid__image"><img src="<?php echo get_template_directory_uri(); ?>/library/images/main.jpg"" alt="/" /></div>
-                    <div class="p-top-main__lead">
-                        <h1 class="p-top-main__title">わたし､そして家族</h1>
-                        <p class="p-top-main__txt">社会の基盤を整えます</p>
-                        <div class="c-btn p-top-main__btn">
-                        <a href="">view more</a>
-                        </div>
-                    </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/slide03.jpg"" alt="/" />
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>

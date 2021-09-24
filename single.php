@@ -10,7 +10,7 @@
             <div class="p-single__contents" id="single-content">
                 <p class="p-single__date"><?php the_date('Y/m/d');?></p>
                 <h3 class="p-single__post-title"><?php the_title();?></h3>
-                <p class="c-category p-single__category"></p>
+                <p class="c-category p-single__category">メディア</p>
                 <p class="c-category p-single__category">メディア</p>
 
                 <div class="p-single__container">
