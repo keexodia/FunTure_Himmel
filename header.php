@@ -1,19 +1,11 @@
 <!doctype html>
+	<html lang=ja>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		<meta name="format-detection" content="telephone=no" />
 		<!-- meta情報 -->
-		<title><?php wp_title(''); ?></title>
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!-- ogp -->
-		<meta property="og:title" content="" />
-		<meta property="og:type" content="" />
-		<meta property="og:url" content="" />
-		<meta property="og:image" content="" />
-		<meta property="og:site_name" content="" />
-		<meta property="og:description" content="" />
+		<title><?php echo get_bloginfo('get_bloginfo'); ?> <?php if(wp_title()):?> | <?php wp_title();endif; ?></title>
 		<?php wp_head(); ?>
 	</head>
 
@@ -21,9 +13,11 @@
 		<!-- header -->
 		<header class="l-header p-header">
 			<div class="p-header__inner">
-				<div class="p-header__logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" alt="" />
-				</div>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<div class="p-header__logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" alt="" />
+					</div>
+				</a>
 				<?php
             		// wp_nav_menu( array(
 					// 	'theme_location' => 'main-menu',
@@ -58,11 +52,20 @@
 						<li class="p-header__list p-header__drower">
 						<a href="">STAFF</a>
 						<ul class="sub p-header__sub">
-							<li class="p-header__list--sub"><a href="">LECTURE</a></li>
-							<li class="p-header__list--sub"><a href="">SPACE WEATHER</a></li>
-							<li class="p-header__list--sub"><a href="">HIMMEL ZEMI</a></li>
-							<li class="p-header__list--sub"><a href="">COLORFUL FAMILY COMMUNITY</a></li>
-							<li class="p-header__list--sub"><a href="">COACHING/CONSULTING</a></li>
+							 <?php
+								$args = array(
+									'post_type' => 'staff',
+									'post_per_page' => -1,
+								);
+								$posts = get_posts($args);
+								foreach($posts as $post):
+								setup_postdata($post);
+							?>
+							<li class="p-header__list--sub"><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
+							<?php
+								endforeach;
+								wp_reset_postdata();
+							?>
 						</ul>
 						</li>
 						<li class="p-header__list">

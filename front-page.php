@@ -346,15 +346,15 @@
             <?php if( have_rows('sns_banner') ): ?>
                 <?php while( have_rows('sns_banner') ): the_row();?>
                 <div class="p-link__item">
-                    <a class="p-link__block">
+                    <a href="<?php echo get_sub_field('sns_link');?>" class="p-link__block">
                         <div class="p-link__sns">
-                            <img src="<?php echo get_sub_field('sns_logo');?>" alt="twitter" />
+                            <img src="<?php echo get_sub_field('sns_logo');?>" alt="sns" />
                         </div>
                         <div class="p-link__txt">
                             <?php if(get_sub_field('text_or_photo')):?>
                                 <p class="p-link__name"><?php echo get_sub_field('upper_text');?></p>
                             <?php else:?>
-                                <p class="p-link__txt--img"><img src="<?php echo get_sub_field('upper_img');?>" alt="" /></p>
+                                <p class="p-link__txt--img"><img src="<?php echo get_sub_field('upper_img');?>" alt="<?php echo get_sub_field('bottom_text');?>" /></p>
                             <?php endif;?>
                             <p class="p-link__name"><?php echo get_sub_field('bottom_text');?></p>
                         </div>
@@ -365,9 +365,9 @@
             <?php if( have_rows('company_banner') ): ?>
                 <?php while( have_rows('company_banner') ): the_row();?>
                 <div class="p-link__item p-link__item--asset">
-                    <a class="p-link__block p-link__block--asset">
+                    <a href="<?php echo get_sub_field('company_link');?>" class="p-link__block p-link__block--asset">
                     <div class="p-link__asset">
-                        <img src="<?php echo get_sub_field('company_logo');?>" alt="ablad" />
+                        <img src="<?php echo get_sub_field('company_logo');?>" alt="<?php echo get_sub_field('company');?>" />
                     </div>
                     </a>
                     <p class="p-link__guide"><?php echo get_sub_field('company');?></p>
