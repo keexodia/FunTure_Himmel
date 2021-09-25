@@ -9,6 +9,14 @@
           <div class="p-archive__contents" id="content">
             <!-- loop -->
             <?php
+              $categories = get_the_category();
+              $out_cat = '';
+              foreach( $categories as $category ) {
+                $out_cat += $category->name .',';
+              }
+              echo $out_cat;
+            ?>
+            <?php
               $args = array(
                   'post_type'      => 'post',
                   'posts_per_page' => 5,
@@ -16,7 +24,6 @@
               $posts = get_posts($args);
               foreach ( $posts as $post ): setup_postdata( $post );
             ?>
-            <?php the_ID();?>
             <?php endforeach; wp_reset_postdata();?>
 
             <div class="p-archive__article">

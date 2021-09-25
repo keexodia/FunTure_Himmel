@@ -15,7 +15,7 @@
 			<div class="p-header__inner">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<div class="p-header__logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" alt="" />
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/himmel_logo.jpg" alt="" />
 					</div>
 				</a>
 				<?php
@@ -42,11 +42,11 @@
 						<li class="p-header__list p-header__drower">
 						<a href="">SERVICE</a>
 						<ul class="sub p-header__sub">
-							<li class="p-header__list--sub"><a href="">LECTURE</a></li>
-							<li class="p-header__list--sub"><a href="">SPACE WEATHER</a></li>
-							<li class="p-header__list--sub"><a href="">HIMMEL ZEMI</a></li>
-							<li class="p-header__list--sub"><a href="">COLORFUL FAMILY COMMUNITY</a></li>
-							<li class="p-header__list--sub"><a href="">COACHING/CONSULTING</a></li>
+							<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/lecture/">講演</a></li>
+							<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/space-weather/">宇宙天気</a></li>
+							<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/seminar/">ヒンメルゼミ</a></li>
+							<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/colorful/">彩り家族コミュニティ</a></li>
+							<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/coaching/">コーチング/コンサルティング</a></li>
 						</ul>
 						</li>
 						<li class="p-header__list p-header__drower">
@@ -68,9 +68,9 @@
 							?>
 						</ul>
 						</li>
-						<li class="p-header__list">
+						<!-- <li class="p-header__list">
 						<a href="">NEWS</a>
-						</li>
+						</li> -->
 					</ul>
 					<ul>
 						<li class="p-header__list p-header__contact">
@@ -110,23 +110,23 @@
 					<li class="p-header__list p-header__drower">
 					<a href="">SERVICE</a>
 					<ul class="sub p-header__sub">
-						<li class="p-header__list--sub"><a href="">LECTURE</a></li>
-						<li class="p-header__list--sub"><a href="">SPACE WEATHER</a></li>
-						<li class="p-header__list--sub"><a href="">HIMMEL ZEMI</a></li>
-						<li class="p-header__list--sub"><a href="">COLORFUL FAMILY COMMUNITY</a></li>
-						<li class="p-header__list--sub"><a href="">COACHING/CONSULTING</a></li>
+						<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/lecture/">講演</a></li>
+						<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/space-weather/">宇宙天気</a></li>
+						<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/seminar/">ヒンメルゼミ</a></li>
+						<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/colorful/">彩り家族コミュニティ</a></li>
+						<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/coaching/">コーチング/コンサルティング</a></li>
 					</ul>
 					</li>
 					<li class="p-header__list p-header__drower">
 					<a href="">STAFF</a>
 					</li>
-					<li class="p-header__list">
+					<!-- <li class="p-header__list">
 					<a href="">NEWS</a>
-					</li>
+					</li> -->
 				</ul>
 				<ul>
 					<li class="p-header__list p-header__contact">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>CONTACT/">CONTACT</a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/">CONTACT</a>
 					</li>
 				</ul>
 				</nav>

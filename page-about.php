@@ -30,8 +30,8 @@
                 <p class="p-about__description">東京都世田谷区</p>
             </div>
             <div class="p-about__summary">
-                <p class="p-about__detail">所在地</p>
-                <p class="p-about__description">東京都世田谷区</p>
+                <p class="p-about__detail">代表取締役</p>
+                <p class="p-about__description">斉田季実治</p>
             </div>
             </div>
             <div class="p-about-service">
