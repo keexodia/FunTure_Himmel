@@ -6,14 +6,14 @@
 ?>
 <?php get_header(); ?>
 
-    <section class="main-content l-about-content p-about">
+    <section class="main-content l-about-content p-contact">
         <div class="l-inner p-about__inner">
             <h2 class="c-title c-title-big p-about__title">
             CONTACT
             <span>お問い合わせ</span>
             </h2>
             <div class="p-about__information">
-                <?php echo do_shortcode('[contact-form-7 id="550" title="コンタクトフォーム 1"]');?>
+                <?php echo do_shortcode('[contact-form-7 id="718" title="コンタクトフォーム 1_copy"]');?>
             </div>
         </div>
     </section>
@@ -22,7 +22,7 @@
     <div class="l-breadcrumb-area">
         <ul class="p-breadcrumb">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
         </ul>
     </div>
     <!-- /.breadcrumb -->
