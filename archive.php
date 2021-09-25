@@ -8,6 +8,17 @@
         <div class="p-archive__wrapper">
           <div class="p-archive__contents" id="content">
             <!-- loop -->
+            <?php
+              $args = array(
+                  'post_type'      => 'post',
+                  'posts_per_page' => 5,
+              );
+              $posts = get_posts($args);
+              foreach ( $posts as $post ): setup_postdata( $post );
+            ?>
+            <?php the_ID();?>
+            <?php endforeach; wp_reset_postdata();?>
+
             <div class="p-archive__article">
               <div class="p-top-news__group">
                 <div class="p-top-news__infomation">

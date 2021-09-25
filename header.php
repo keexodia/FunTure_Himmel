@@ -74,7 +74,7 @@
 					</ul>
 					<ul>
 						<li class="p-header__list p-header__contact">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>CONTACT/">CONTACT</a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/">CONTACT</a>
 						</li>
 					</ul>
 				</div>

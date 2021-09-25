@@ -1061,7 +1061,7 @@ nav.globalMenuSp.active {
 }
 
 .c-category {
-	background-color: #333;
+	background-color: #002e5d;
 	border-radius: 0.90625rem;
 	color: #fff;
 	display: inline-block;
@@ -3323,4 +3323,44 @@ input[type="submit"]{
 	width: 33rem;
 	height: 18rem;
 	resize: none;
+}
+
+.p-contact__inner{
+	text-align: center;
+}
+.p-contact__inner div{
+	margin: 3rem 0;
+}
+.p-contact__title{
+	padding: 5.125rem 0rem;
+	text-align: center;
+}
+.p-thanks{
+	margin-top: 0rem;
+}
+@media screen and (max-width: 762px) {
+	.contact_form > div{
+		display: block;
+	}
+	.contact_form > div:nth-child(n+2){
+		text-align: center;
+	}
+	.contact_form > div:nth-child(n+2) > p{
+		text-align: left;
+	}
+	.contact_form > div > p:first-child{width: 100%;}
+	.contact_form  textarea{
+		width: 80vw;
+		height: 12rem;
+		resize: none;
+		margin:0 auto;
+	}
+	input[type="text"],input[type="email"], input[type="tel"]{
+		margin:0 auto;
+		width: 80vw;
+	}
+	.contact_form > div > p:nth-child(2){
+		padding-left: 0.5rem;
+		margin:0 auto;
+	}
 }
