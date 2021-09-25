@@ -3286,3 +3286,24 @@ h3.p-top-vision__think {
 	transform: translateY(-50%);
 	width: 0.3125rem;
 }
+/*contactForm*/
+.wpcf7 label{display:flex;}
+form.wpcf7-form p{
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+.wpcf7 label .wpcf7-list-item{
+	display: block;
+}
+.wpcf7-form-control-wrap.your-name{
+	margin-left: 15%;
+}
+.wpcf7-form-control-wrap.your-email{
+	margin-left: 6.3%;
+}
+.wpcf7-form-control-wrap.tel-331{
+	margin-left: 12.9%;
+}
+.wpcf7-form-control-wrap.textarea-863{
+	margin-left: 4.1%;
+}

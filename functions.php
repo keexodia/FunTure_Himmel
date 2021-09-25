@@ -37,7 +37,7 @@ function my_setup()
     add_action('wp_enqueue_scripts', 'my_script_init');
 
     // 非表示にしたい項目(固定ページ)
-    add_action( 'init', 'my_remove_post_editor_support' );
+    //add_action( 'init', 'my_remove_post_editor_support' );
     function my_remove_post_editor_support(){
         remove_post_type_support( 'page','editor' ); //本文
         remove_post_type_support( 'page','thumbnail' ); // アイキャッチ

@@ -1,21 +1,23 @@
+<?php
+/*
+ * Template Name: Social Page
+ * Template Post type:post,social
+ * Description: ソーシャルページテンプレート
+ */
+?>
 <?php get_header(); ?>
 
     <section class="main-content l-single-content p-single">
         <div class="l-page__inner p-single__inner">
-            <?php if(get_field("upper_title")):?>
-                <p class="p-single__subtitle"><?php echo get_field("upper_title"); ?></p>
-            <?php endif;?>
+            <p class="p-single__subtitle">EIKO SAITA</p>
             <h2 class="c-title c-title-big p-single__title">
-            <?php echo get_field("page_english_title"); ?>
-            <?php if(get_field("bottom_title")):?>
-                <span><?php echo get_field("bottom_title"); ?></span>
-            <?php endif;?>
+            SOCIAL ACTIVITIES, ETC.
+            <span>社会活動等</span>
             </h2>
             <div class="p-page__wrapper">
             <div class="p-page__contents" id="page-content">
-                <?php if(get_field("page_img")):?>
-                    <p class="p-page__image"><img src="<?php echo get_field("page_img"); ?>"></p>
-                <?php endif;?>
+                <p class="p-page__image"><img src="./assets/img/ear.png"></p>
+
                 <div class="p-page__container">
                     <?php the_content(); ?>
                 </div>
