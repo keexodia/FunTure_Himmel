@@ -43,11 +43,11 @@
                 vision/mission
                 <span>私たちの目指すもの/使命</span>
                 </h2>
-                <h3 class="p-top-vision__think">Think Future, Make My Story</h3>
+                <h3 class="p-top-vision__think">Think Future, <br class="visible-xxxxxs visible-xxxxs visible-xxxs">Make My Story</h3>
                 <div class="p-top-vision__text">
                 <p class="p-top-vision__txt">空を見上げ、『天気』を予想し、伝える。</p>
-                <p class="p-top-vision__txt">自分・社会を見つめ、『転機／チャンス』を掴み、進む。</p>
-                <p class="p-top-vision__txt">情報を正しく理解し、知識に変換し、自ら動くひとを育む。</p>
+                <p class="p-top-vision__txt">自分・社会を見つめ、<br class="visible-xxxxxs visible-xxxxs visible-xxxs">『転機／チャンス』を掴み、進む。</p>
+                <p class="p-top-vision__txt">情報を正しく理解し、知識に変換し、<br class="visible-xxxxxs visible-xxxxs visible-xxxs">自ら動くひとを育む。</p>
                 <p class="p-top-vision__txt">
                     <span>「確かな情報」</span>× <span>「未来予想」</span>＝<span>「自ら行動する」</span>
                 </p>
@@ -326,18 +326,14 @@
                 </div>
                 <?php endwhile; ?>
             <?php endif;?>
-            <?php if( have_rows('company_banner') ): ?>
-                <?php while( have_rows('company_banner') ): the_row();?>
-                <div class="p-link__item p-link__item--asset">
-                    <a href="<?php echo get_sub_field('company_link');?>" class="p-link__block p-link__block--asset">
+<div class="p-link__item p-link__item--asset">
+                    <a href="https://ablab.space/" class="p-link__block p-link__block--asset">
                     <div class="p-link__asset">
-                        <img src="<?php echo get_sub_field('company_logo');?>" alt="<?php echo get_sub_field('company');?>" />
+                        <img src="https://funtre-design.com/himmel/wp/wp-content/uploads/2021/09/ablad.png" alt="ABラボ">
                     </div>
                     </a>
-                    <p class="p-link__guide"><?php echo get_sub_field('company');?></p>
+                    <p class="p-link__guide">ABラボ</p>
                 </div>
-                <?php endwhile; ?>
-            <?php endif;?>
             </div>
         </div>
     </section>
