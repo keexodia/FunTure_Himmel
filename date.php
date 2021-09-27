@@ -16,12 +16,10 @@
                 }
                 ?>
                 <?php
-                $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
                 $args = array(
                     'post_type'      => 'post',
                     'posts_per_page' => 15,
                     'category' => $cats_name,
-                    'paged' => $paged,
                 );
                 if($cats_name!==''):
                     $the_query = new WP_Query( $args );
@@ -43,7 +41,7 @@
                     </div>
                 </div>
                 <?php endwhile;
-                the_posts_pagination( $args );
+                
                 wp_reset_postdata();endif;
                 else:?>
                     <div class="p-archive__article">

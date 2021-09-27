@@ -2,28 +2,38 @@
     <section class="main-content l-archive-content p-archive">
         <div class="l-inner p-archive__inner">
             <h2 class="c-title c-title-big p-archive__title">
-            news
-            <span>お知らせ</span>
+            <?php //現在のカテゴリーを取得
+            $uri = rtrim($_SERVER["REQUEST_URI"], '/');
+            $uri = substr($uri, strrpos($uri, '/') + 1);
+            $cate_info = get_category_by_slug($uri);
+            $cate_info = $cate_info->cat_ID;
+            $category = get_category($cate_info);
+            if($cate_info!=null):
+                echo $category->category_nicename;
+            else:
+                echo 'News';
+            endif;
+            ?>
+            <span><?php
+            if($cate_info!=null):
+                echo $category->cat_name;
+            else:
+                echo 'お知らせ';
+            endif;
+            ?></span>
             </h2>
             <div class="p-archive__wrapper">
             <div class="p-archive__contents" id="content">
                 <!-- loop -->
-                <?php
-                $cats =  get_the_category();
-                $cats_name='';
-                foreach($cats as $cat) {
-                    $cats_name.=$cat->cat_ID.',';
-                }
-                ?>
+
                 <?php
                 $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
                 $args = array(
                     'post_type'      => 'post',
-                    'posts_per_page' => 15,
-                    'category' => $cats_name,
+                    'cat' => $cate_info,
                     'paged' => $paged,
                 );
-                if($cats_name!==''):
+                if($cate_info!==''):
                     $the_query = new WP_Query( $args );
                     if ( $the_query->have_posts() ):
                         while ( $the_query->have_posts() ):
@@ -33,7 +43,10 @@
                     <div class="p-top-news__group">
                         <div class="p-top-news__infomation">
                         <p class="p-archive__date"><?php the_date('Y/m/d');?></p>
-                        <?php foreach($cats as $cat):?>
+                        <?php
+                            $cats =  get_the_category();
+                            foreach($cats as $cat):
+                        ?>
                             <p class="c-category p-top-news__category"><a href="<?php echo get_category_link( $cat->cat_ID ); ?>"><?php echo $cat->cat_name; ?></a></p>
                         <?php endforeach;?>
                         </div>
@@ -44,16 +57,15 @@
                 </div>
                 <?php endwhile;
                 the_posts_pagination( $args );
-                wp_reset_postdata();endif;
-                else:?>
-                    <div class="p-archive__article">
+                wp_reset_postdata();else:?>
+                <div class="p-archive__article">
                         <div class="p-top-news__group">
                             <div class="p-archive__post">
                                 <p>投稿記事はありません。</p>
                             </div>
                         </div>
                     </div>
-                <?php endif;?>
+                <?php endif;endif;?>
 
                 <!-- ページナビ Prime Strategy Page Naviプラグインの場合はこれでスタイルもOK-->
                 <!--

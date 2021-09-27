@@ -67,7 +67,7 @@
     <!-- /.vision/mission -->
 
     <!-- news -->
-    <!-- <section class="l-top-news p-top-news">
+    <section class="l-top-news p-top-news">
         <div class="l-news">
             <div class="p-top-news__wrapper">
                 <div class="p-top-news__guide">
@@ -79,62 +79,62 @@
                     <a href="">view more</a>
                     </div>
                 </div>
-                <div class="p-top-news__article"> -->
+                <div class="p-top-news__article">
 
                 <?php
-                    // $args = array(
-                    //     'post_type'      => 'post',
-                    //     'posts_per_page' => 5,
-                    // );
-                    // $posts = get_posts($args);
-                    // foreach ( $posts as $post ): setup_postdata( $post );
+                    $args = array(
+                        'post_type'      => 'post',
+                        'posts_per_page' => 5,
+                    );
+                    $posts = get_posts($args);
+                    foreach ( $posts as $post ): setup_postdata( $post );
                 ?>
-                    <!-- <div class="p-top-news__group">
+                    <div class="p-top-news__group">
                         <div class="p-top-news__infomation">
-                            <p class="p-top-news__date"><?php //the_date('Y/m/d');?></p>
+                            <p class="p-top-news__date"><?php the_date('Y/m/d');?></p>
                             <?php
-                                //$categories = get_the_category();
-                                //foreach( $categories as $category ):
+                                $categories = get_the_category();
+                                foreach( $categories as $category ):
                             ?>
-                                <p class="c-category p-top-news__category"><a href="<?php //echo get_category_link($category->term_id);?>"><?php //echo $category->name;?></a></p>
-                            <?php //endforeach;?>
+                                <p class="c-category p-top-news__category"><a href="<?php echo get_category_link($category->term_id);?>"><?php echo $category->name;?></a></p>
+                            <?php endforeach;?>
                         </div>
                         <div class="p-top-news__post">
-                            <?php //if(get_field('link_action')=='detail'):?>
-                                <a href="<?php //the_permalink();?>"><?php //the_title();?></a>
-                            <?php //elseif(get_field('link_action')=='outer_link'):?>
-                                <a href="<?php //echo get_field('outer_link_url');?>"><?php //the_title();?></a>
-                            <?php //elseif(get_field('link_action')=='text_only'):?>
-                                <?php //the_title();?>
-                            <?php //endif;?>
+                            <?php if(get_field('link_action')=='detail'):?>
+                                <a href="<?php the_permalink();?>"><?php the_title();?></a>
+                            <?php elseif(get_field('link_action')=='outer_link'):?>
+                                <a href="<?php echo get_field('outer_link_url');?>"><?php the_title();?></a>
+                            <?php elseif(get_field('link_action')=='text_only'):?>
+                                <?php the_title();?>
+                            <?php endif;?>
                         </div>
-                    </div> -->
-                <?php //endforeach; wp_reset_postdata();?>
-                <!-- </div>
-            </div> -->
+                    </div>
+                <?php endforeach; wp_reset_postdata();?>
+                </div>
+            </div>
 
-        <?php //if( have_rows('news_banner') ): ?>
-            <!-- <div class="p-top-news__about p-top-about">
-                <div class="p-top-about__wrap"> -->
+        <?php if( have_rows('news_banner') ): ?>
+            <div class="p-top-news__about p-top-about">
+                <div class="p-top-about__wrap">
                     <!-- loop -->
-                    <?php //while( have_rows('news_banner') ): the_row();?>
-                        <!-- <div class="c-card p-top-about__card">
-                            <a href="<?php //echo get_sub_field('link');?>">
+                    <?php while( have_rows('news_banner') ): the_row();?>
+                        <div class="c-card p-top-about__card">
+                            <a href="<?php echo get_sub_field('link');?>">
                                 <div class="c-card-img">
-                                <img src="<?php //echo get_sub_field('photo');?>" alt="<?php //echo get_sub_field('title');?>" />
+                                <img src="<?php echo get_sub_field('photo');?>" alt="<?php echo get_sub_field('title');?>" />
                                 </div>
-                                <h3 class="c-card-title"> -->
-                                <?php //echo get_sub_field('title');?>
-                                <!-- <span><?php //echo get_sub_field('subtitle');?></span>
+                                <h3 class="c-card-title">
+                                <?php echo get_sub_field('title');?>
+                                <span><?php echo get_sub_field('subtitle');?></span>
                                 </h3>
                             </a>
-                        </div> -->
-                    <?php //endwhile; ?>
-                <!-- </div>
-            </div> -->
-        <?php //endif;?>
-        <!-- </div>
-    </section> -->
+                        </div>
+                    <?php endwhile; ?>
+                </div>
+            </div>
+        <?php endif;?>
+        </div>
+    </section>
     <!-- /.news -->
 
     <!-- service -->
@@ -258,7 +258,7 @@
                 endforeach;
                 wp_reset_postdata();
             ?>
-            <!-- <div class="p-top-staff__wrap">
+            <div class="p-top-staff__wrap">
                 <div class="p-top-staff__item p-top-staff__row">
                     <div class="p-top-staff__img">
                         <img src="<?php echo get_template_directory_uri(); ?>/library/images/staff33.png" alt="/" />
@@ -277,16 +277,16 @@
                             </div>
                             <div class="p-top-staff__sns">
                                 <div class="p-top-staff__icon p-top-staff__facebook">
-                                    <a href=""><img src="<?php //echo get_template_directory_uri(); ?>/library/images/facebook.png" alt="facebook" /></a>
+                                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/facebook.png" alt="facebook" /></a>
                                 </div>
                                 <div class="p-top-staff__icon p-top-staff__instagram">
-                                    <a href=""><img src="<?php //echo get_template_directory_uri(); ?>/library/images/instagram.png" alt="instagram" /></a>
+                                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/instagram.png" alt="instagram" /></a>
                                 </div>
                                 <div class="p-top-staff__icon p-top-staff__note">
-                                    <a href=""><img src="<?php //echo get_template_directory_uri(); ?>/library/images/note.png" alt="note" /></a>
+                                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/note.png" alt="note" /></a>
                                 </div>
                                 <div class="p-top-staff__icon p-top-staff__memo">
-                                    <a href=""><img src="<?php //echo get_template_directory_uri(); ?>/library/images/memo.png" alt="memo" /></a>
+                                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/memo.png" alt="memo" /></a>
                                 </div>
                             </div>
                             <div class="c-btn c-btn-short p-top-staff__btn">
@@ -298,7 +298,7 @@
                 <div class="c-btn c-btn-long p-top-staffs__btn">
                     <a href="">スタッフ一覧</a>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
     <!-- staff -->

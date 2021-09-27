@@ -1364,6 +1364,47 @@ nav.globalMenuSp.active {
 	opacity: 0.5;
 }
 
+.nav-links{
+	font-family: "YuMincho", "Yu Mincho", serif;
+	font-size: 0.875rem;
+	margin-left: -0.625rem;
+	margin-top: 3.125rem;
+	text-align: left;
+}
+
+.nav-links span.current{
+	align-items: center;
+	background: #002e5d;
+	color: #fff;
+	display: inline-flex;
+	height: 2.5rem;
+	justify-content: center;
+	line-height: 1.0625rem;
+	margin-left: 0.625rem;
+	padding: 0.6875rem 0.625rem;
+	width: 2.5rem;
+}
+
+.nav-links a.page-numbers {
+	align-items: center;
+	background-color: #999999;
+	border: solid 1px #999;
+	color: #fff;
+	display: inline-flex;
+	height: 2.5rem;
+	justify-content: center;
+	line-height: 1rem;
+	margin-left: 0.625rem;
+	padding: 0.625rem;
+	text-decoration: none;
+	transition: 0.5s;
+	width: 2.5rem;
+}
+
+.nav-links a.next, .nav-links a.prev{
+	display: none;
+}
+
 .p-about-service {
 	padding-bottom: 5.8125rem;
 }
@@ -3373,4 +3414,41 @@ input[type="submit"]{
 .coming{
 	padding-top: 5rem;
 	text-align: center;
+}
+
+.p-service__image{
+	width: 100%;
+    object-fit: contain;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.p-service__image img{
+	object-fit: cover;
+    width: 100%;
+    height: 410px;
+    margin: auto;
+	border-radius: 0%;
+}
+.p-service__inner{
+	max-width: 1024px;
+}
+@media screen and (max-width: 1024px) {
+	.p-service__image img{
+		height: 350px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.p-service__image img{
+		height: 250px;
+	}
+}
+.p-page__container::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	background-color: #002e5d;
 }
