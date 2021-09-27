@@ -40,9 +40,7 @@
                         </div>
                     </div>
                 </div>
-                <?php endwhile;
-                
-                wp_reset_postdata();endif;
+                <?php endwhile;wp_reset_postdata();endif;
                 else:?>
                     <div class="p-archive__article">
                         <div class="p-top-news__group">

@@ -76,7 +76,7 @@
                     <span>ニュース</span>
                     </h2>
                     <div class="c-btn c-btn-short p-top-news__btn">
-                    <a href="">view more</a>
+                    <!--<a href="">view more</a>-->
                     </div>
                 </div>
                 <div class="p-top-news__article">
@@ -103,7 +103,7 @@
                             <?php if(get_field('link_action')=='detail'):?>
                                 <a href="<?php the_permalink();?>"><?php the_title();?></a>
                             <?php elseif(get_field('link_action')=='outer_link'):?>
-                                <a href="<?php echo get_field('outer_link_url');?>"><?php the_title();?></a>
+                                <a href="<?php echo get_field('outer_link_url');?>" target="_blank"><?php the_title();?></a>
                             <?php elseif(get_field('link_action')=='text_only'):?>
                                 <?php the_title();?>
                             <?php endif;?>

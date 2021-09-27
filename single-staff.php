@@ -65,21 +65,21 @@
     <!-- /. -->
 
     <!-- link -->
-    <!-- <section class="l-single-staff-link p-single-staff-link">
+    <section class="l-single-staff-link p-single-staff-link">
         <div class="l-inner p-single-staff-link__inner">
             <div class="p-single-staff-link__wrap">
             <div class="p-single-staff-link__item">
-                <a href="<?php //echo get_field('kouen_link');?>">講演</a>
+                <a href="<?php echo get_field('kouen_link');?>">講演</a>
             </div>
             <div class="p-single-staff-link__item">
-                <a href="<?php //echo get_field('media_link');?>">メディア</a>
+                <a href="<?php echo get_field('media_link');?>">メディア</a>
             </div>
             <div class="p-single-staff-link__item">
-                <a href="<?php //echo get_field('books_link');?>">書籍</a>
+                <a href="<?php echo get_field('books_link');?>">書籍</a>
             </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- /. -->
 
     <!-- list -->

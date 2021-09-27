@@ -15,7 +15,7 @@
 			<div class="p-header__inner">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<div class="p-header__logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/library/images/himmel_logo.jpg" alt="" />
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/himmel_logo.jpg" alt="<?php  bloginfo( 'name' ); ?>" />
 					</div>
 				</a>
 				<?php

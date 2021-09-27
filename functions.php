@@ -87,14 +87,3 @@ function my_setup()
     add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
     //グローバルナビメニューの第二階層にクラス付与
-    
-    
-    //ページネーション
-    
-    //ウィジェットアーカイブを年にする。
-    //add_filter( 'widget_archives_args','my_archives');
-    function my_archives( $content ){
-      $content['type'] 	= 'yearly';
-      $content['limit'] 	= 20; //n年分を表示、この場合20年
-      return $content;
-    }

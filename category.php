@@ -42,7 +42,7 @@
                 <div class="p-archive__article">
                     <div class="p-top-news__group">
                         <div class="p-top-news__infomation">
-                        <p class="p-archive__date"><?php the_date('Y/m/d');?></p>
+                        <p class="p-archive__date"><?php the_time('Y/m/d');?></p>
                         <?php
                             $cats =  get_the_category();
                             foreach($cats as $cat):
@@ -51,7 +51,13 @@
                         <?php endforeach;?>
                         </div>
                         <div class="p-archive__post">
-                        <a href="<?php the_permalink();?>"> <?php the_title();?></a>
+                        <?php if(get_field('link_action')=='detail'):?>
+                                <a href="<?php the_permalink();?>"><?php the_title();?></a>
+                            <?php elseif(get_field('link_action')=='outer_link'):?>
+                                <a href="<?php echo get_field('outer_link_url');?>" target="_blank"><?php the_title();?></a>
+                            <?php elseif(get_field('link_action')=='text_only'):?>
+                                <?php the_title();?>
+                            <?php endif;?>
                         </div>
                     </div>
                 </div>
@@ -93,7 +99,7 @@
         <div class="l-breadcrumb-area">
         <ul class="p-breadcrumb">
             <li><a href="">HOME</a></li>
-            <li><a href="">ページ名</a></li>
+            <li><a href=""><?php echo $category->cat_name;?></a></li>
         </ul>
         </div>
     <!-- /.breadcrumb -->
