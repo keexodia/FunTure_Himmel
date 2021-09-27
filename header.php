@@ -40,7 +40,7 @@
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">ABOUT</a>
 						</li>
 						<li class="p-header__list p-header__drower">
-						<a href="">SERVICE</a>
+						<p>SERVICE</p>
 						<ul class="sub p-header__sub">
 							<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/lecture/">講演</a></li>
 							<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/space-weather/">宇宙天気</a></li>
@@ -50,7 +50,7 @@
 						</ul>
 						</li>
 						<li class="p-header__list p-header__drower">
-						<a href="">STAFF</a>
+						<p>STAFF</p>
 						<ul class="sub p-header__sub">
 							 <?php
 								$args = array(

@@ -1223,17 +1223,17 @@ nav.globalMenuSp.active {
 	margin-right: 1.25rem;
 }
 
-.p-header__item .p-header__list > a {
+.p-header__item .p-header__list > a,.p-header__item .p-header__list > p {
 	display: block;
 	line-height: 6.5625rem;
 	padding: 0 1.125rem;
 }
 
-.p-header__list a:hover {
+.p-header__list a:hover ,.p-header__list p:hover {
 	position: relative;
 }
 
-.p-header__list a:hover::after {
+.p-header__list a:hover::after,.p-header__list p:hover::after {
 	background-color: #0c3661;
 	content: '';
 	height: 100%;
@@ -3542,4 +3542,49 @@ input[type="submit"]{
 		height: 11rem;
 		object-fit: cover;
 	}
+}
+
+/*宇宙天気*/
+.p-single-service__container p.space-line{
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	border-top: #333 1.5px solid;
+	border-bottom: #333 1.5px solid;
+	margin-bottom: 4rem;
+}
+.family-comunity > div .space-img img {
+    height: inherit;
+}
+.family-comunity > div .logo1 img,.family-comunity > div .logo2 img  {
+    height: inherit;
+    width: 300px;
+    padding: 10px 20px;
+    border: solid 1px #ccc;
+}
+
+.p-page__container .family-comunity li {
+	border-bottom: none;
+	padding-bottom: 0.6540rem;
+	padding-left: 1em;
+	padding-top: 0.6540rem;
+	text-indent: -1.27em;
+}
+
+.p-page__container .family-comunity li::before {
+	content: '';
+	display: inline-block;
+	height: 0.3125rem;
+	left: 0;
+	margin-right: 0.9375rem;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 0.3125rem;
+}
+.lecture-btn span{
+	display: block;
+	width: 100%;
+	padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    font-size: 18px;
 }
