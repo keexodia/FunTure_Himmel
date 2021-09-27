@@ -58,7 +58,7 @@
     <div class="l-breadcrumb-area">
         <ul class="p-breadcrumb">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li><?php the_title(); ?></li>
         </ul>
     </div>
     <!-- /.breadcrumb -->

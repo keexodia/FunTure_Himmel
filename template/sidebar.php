@@ -48,7 +48,7 @@
               </ul>
               <ul class="p-archive__links">
                 <li class="p-archive__link">
-                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/movie">You Tube</a>
+                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/movie">YouTube</a>
                   <ul class="p-archive__sub-links">
                     <li class="p-archive__sub-link"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/movie/movie-kimiharu">斉田季実治</a></li>
                     <li class="p-archive__sub-link"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/movie/movie-eiko">斉田英子</a></li>

@@ -3299,7 +3299,7 @@ h3.p-top-vision__think {
 	border-bottom: solid 1px #000;
     padding-bottom: 1rem;
 }
-.p-page__container h3,.p-page__container h4,.p-page__container h5,.p-page__container h6{
+.p-page__container p,.p-page__container h2,.p-page__container h3,.p-page__container h4,.p-page__container h5,.p-page__container h6{
 	margin:1.5rem 0rem;
 }
 .p-page__container ul{
@@ -3432,8 +3432,9 @@ input[type="submit"]{
 	border-radius: 0%;
 }
 .p-service__inner{
-	max-width: 1024px;
+	max-width: 1250px;
 }
+
 @media screen and (max-width: 1024px) {
 	.p-service__image img{
 		height: 350px;
@@ -3444,11 +3445,101 @@ input[type="submit"]{
 		height: 250px;
 	}
 }
-.p-page__container::before{
+/* .p-page__container::before{
 	content: '';
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	transform: translate(-50%,-50%);
 	background-color: #002e5d;
+} */
+.p-single__container a{
+	border-bottom: 1px solid #3498db;
+	color:#3498db;
+}
+.p-single__container a:hover{
+	border-bottom: 1px solid #3498dbcc;
+}
+.family-comunity{
+	width: 100vw;
+    margin: 0 calc(50% - 50vw);
+    background: #f2f2f2;
+    padding: 8.3rem 9.5rem;
+}
+
+.family-comunity > div{
+	background-color: white;
+    padding: 5rem 9rem;
+    width: 1024px;
+    margin: auto;
+}
+
+.family-comunity > div .wp-block-column{
+	margin: 0;
+}
+.family-comunity > div img{
+	height: 22rem;
+	object-fit: cover;
+}
+.p-single-service__container{
+	padding: 4.3rem 14.5rem;
+	padding-bottom:0rem;
+}
+
+.p-single-service__container p{
+	margin:0.9rem 0rem;
+	line-height: 2rem;
+}
+.p-service{
+	padding-bottom: 0rem;
+}
+
+@media screen and (max-width: 1300px) {
+	.family-comunity > div{
+		background-color: white;
+		padding: 5rem 9rem;
+		width: auto;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.p-single-service__container{
+		padding: 4.3rem 7.5rem;
+		padding-bottom:0;
+	}
+	
+	.family-comunity {
+		width: 100vw;
+		margin: 0 calc(50% - 50vw);
+		background: #f2f2f2;
+		padding: 6.3rem 3.5rem;
+	}
+
+	.family-comunity > div {
+		background-color: white;
+		padding: 5rem 6rem;
+		width: auto;
+		margin: auto;
+	}
+}
+@media screen and (max-width: 782px) {
+	.wp-block-columns{
+		display: block;
+	}
+	.p-single-service__container {
+		padding: 2.3rem 1rem;
+		padding-bottom:0;
+	}
+	.family-comunity {
+		padding: 3.3rem 1.5rem;
+	}
+
+	.family-comunity > div {
+		padding: 2.3rem 1rem;
+	}
+	.family-comunity > div img{
+		height: 11rem;
+		object-fit: cover;
+	}
 }

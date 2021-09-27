@@ -258,47 +258,6 @@
                 endforeach;
                 wp_reset_postdata();
             ?>
-            <div class="p-top-staff__wrap">
-                <div class="p-top-staff__item p-top-staff__row">
-                    <div class="p-top-staff__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/staff33.png" alt="/" />
-                    </div>
-                    <div class="p-top-staff__lead p-top-staff__lead--row">
-                        <div class="p-top-staff__name">
-                            <p class="p-top-staff__en">Eiko Saita</p>
-                            <p class="p-top-staff__ja">斉田英子</p>
-                        </div>
-                        <div class="p-top-staff__text">
-                            <div class="p-top-staff__txt">
-                                <p class="p-top-staff__txt">中央大学法学部 兼任講師</p>
-                                <p class="p-top-staff__txt">博士（学術）</p>
-                                <p class="p-top-staff__txt">コーチ</p>
-                                <p class="p-top-staff__txt">国家資格キャリアコンサルタント</p>
-                            </div>
-                            <div class="p-top-staff__sns">
-                                <div class="p-top-staff__icon p-top-staff__facebook">
-                                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/facebook.png" alt="facebook" /></a>
-                                </div>
-                                <div class="p-top-staff__icon p-top-staff__instagram">
-                                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/instagram.png" alt="instagram" /></a>
-                                </div>
-                                <div class="p-top-staff__icon p-top-staff__note">
-                                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/note.png" alt="note" /></a>
-                                </div>
-                                <div class="p-top-staff__icon p-top-staff__memo">
-                                    <a href=""><img src="<?php echo get_template_directory_uri(); ?>/library/images/memo.png" alt="memo" /></a>
-                                </div>
-                            </div>
-                            <div class="c-btn c-btn-short p-top-staff__btn">
-                                <a href="">view more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="c-btn c-btn-long p-top-staffs__btn">
-                    <a href="">スタッフ一覧</a>
-                </div>
-            </div>
         </div>
     </section>
     <!-- staff -->

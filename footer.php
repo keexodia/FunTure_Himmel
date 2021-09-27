@@ -10,7 +10,7 @@
 					スタッフ
 					<ul class="p-footer__sub-item">
 						<li class="p-footer__sub-list"><a href="<?php echo esc_url( home_url( '/' ) ); ?>staff/kimiharu-saita/">斉田 季実治</a></li>
-						<li class="p-footer__sub-list"><a href="<?php echo esc_url( home_url( '/' ) ); ?>staff/eiko-saita/">斉田英子</a></li>
+						<li class="p-footer__sub-list"><a href="<?php echo esc_url( home_url( '/' ) ); ?>staff/eiko-saita/">斉田 英子</a></li>
 					</ul>
 				</li>
 				<li class="p-footer__list"><a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">会社概要</a></li>
