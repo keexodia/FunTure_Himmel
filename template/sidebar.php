@@ -56,20 +56,18 @@
                 </li>
               </ul>
             </div>
-<!--
-            <div class="p-archive__archive">
+           <div class="p-archive__archive">
               <p class="p-archive__topic">アーカイブ</p>
               <ul class="p-archive__links">
                 <li class="p-archive__link">
-                  <a href="">2021年</a>
+                  <a href="<?php echo get_year_link( '2021' ); ?>">2021年</a>
                 </li>
                 <li class="p-archive__link">
-                  <a href="">2020年</a>
+                  <a href="<?php echo get_year_link( '2020' ); ?>">2020年</a>
                 </li>
                 <li class="p-archive__link">
-                  <a href="">2019年</a>
+                  <a href="<?php echo get_year_link( '2019' ); ?>">2019年</a>
                 </li>
               </ul>
             </div>
--->
           </div>

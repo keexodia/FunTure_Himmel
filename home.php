@@ -2,43 +2,22 @@
     <section class="main-content l-archive-content p-archive">
         <div class="l-inner p-archive__inner">
             <h2 class="c-title c-title-big p-archive__title">
-            <?php //現在のカテゴリーを取得
-            $category_slug = get_query_var('category_name');
-            $cate_info = get_category_by_slug($category_slug);
-            $cate_info = $cate_info->cat_ID;
-            $category = get_category($cate_info);
-            if($cate_info!=null):
-                $title = $category->category_nicename;
-                echo $title = str_replace('-',' ',$title);
-            else:
-                echo 'News';
-            endif;
-            ?>
-            <span><?php
-            if($cate_info!=null):
-                echo $category->cat_name;
-            else:
-                echo 'お知らせ';
-            endif;
-            ?></span>
+            News
+            <span>お知らせ</span>
             </h2>
             <div class="p-archive__wrapper">
             <div class="p-archive__contents" id="content">
                 <!-- loop -->
-
                 <?php
                 $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
                 $args = array(
-                    'post_type'      => 'post',
-                    'cat' => $cate_info,
+                    'post_type'  => 'post',
                     'paged' => $paged,
                 );
-                if($cate_info!==''):
-                    $the_query = new WP_Query( $args );
-                    if ( $the_query->have_posts() ):
-                        while ( $the_query->have_posts() ):
-                            $the_query->the_post();
-                ?>
+                $the_query = new WP_Query( $args );
+                if ( $the_query->have_posts() ):
+                    while ( $the_query->have_posts() ):
+                    $the_query->the_post();?>
                 <div class="p-archive__article">
                     <div class="p-top-news__group">
                         <div class="p-top-news__infomation">
@@ -73,9 +52,7 @@
                             </div>
                         </div>
                     </div>
-                <?php endif;endif;?>
-
-                <!-- ページナビ Prime Strategy Page Naviプラグインの場合はこれでスタイルもOK-->
+                <?php endif;?>
             </div>
                     <?php require_once dirname(__FILE__) .'/template/sidebar.php';?>
             </div>
@@ -86,7 +63,7 @@
         <div class="l-breadcrumb-area">
         <ul class="p-breadcrumb">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
-            <li><?php echo $category->cat_name;?></li>
+            <li>News</li>
         </ul>
         </div>
     <!-- /.breadcrumb -->
