@@ -12,7 +12,7 @@
             </h2>
             <div class="p-single__wrapper">
             <div class="p-single__contents" id="single-content">
-                <p class="p-single__date"><?php the_date('Y/m/d');?></p>
+                <p class="p-single__date"><?php the_time('Y/m/d');?></p>
                 <h3 class="p-single__post-title"><?php the_title();?></h3>
                 <?php
                     $categories = get_the_category();

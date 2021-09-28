@@ -91,7 +91,7 @@
                 ?>
                     <div class="p-top-news__group">
                         <div class="p-top-news__infomation">
-                            <p class="p-top-news__date"><?php the_date('Y/m/d');?></p>
+                            <p class="p-top-news__date"><?php the_time('Y/m/d');?></p>
                             <?php
                                 $categories = get_the_category();
                                 foreach( $categories as $category ):
