@@ -287,14 +287,18 @@
                 </div>
                 <?php endwhile; ?>
             <?php endif;?>
-<div class="p-link__item p-link__item--asset">
-                    <a href="https://ablab.space/" class="p-link__block p-link__block--asset">
+            <?php if( have_rows('company_banner') ): ?>
+                <?php while( have_rows('company_banner') ): the_row();?>
+                <div class="p-link__item p-link__item--asset">
+                    <a href="<?php echo get_sub_field('company_link');?>" class="p-link__block p-link__block--asset">
                     <div class="p-link__asset">
-                        <img src="https://funtre-design.com/himmel/wp/wp-content/uploads/2021/09/ablad.png" alt="ABラボ">
+                        <img src="<?php echo get_sub_field('company_logo');?>" alt="<?php echo get_sub_field('company');?>" />
                     </div>
                     </a>
-                    <p class="p-link__guide">ABラボ</p>
+                    <p class="p-link__guide"><?php echo get_sub_field('company');?></p>
                 </div>
+                <?php endwhile; ?>
+            <?php endif;?>
             </div>
         </div>
     </section>

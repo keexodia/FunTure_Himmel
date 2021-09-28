@@ -1958,7 +1958,7 @@ nav.globalMenuSp.active {
 
 .p-link__asset {
 	display: block;
-	height: 4.375rem;
+	height: 5.375rem;
 	margin: auto;
 }
 
@@ -1968,6 +1968,16 @@ nav.globalMenuSp.active {
 	height: 100%;
 	object-fit: cover;
 	width: 100%;
+}
+@media screen and (max-width:768px) {
+	.p-link__asset img {
+		-o-object-fit: contain;
+		display: inline-block;
+		height: 100%;
+		object-fit: contain;
+		width: 100%;
+	}
+
 }
 
 
