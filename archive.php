@@ -26,7 +26,7 @@
             <div class="p-archive__article">
               <div class="p-top-news__group">
                 <div class="p-top-news__infomation">
-                  <p class="p-archive__date"><?php the_time('Y/m/d');?></p>
+                  <p class="p-archive__date"><?php the_date('Y/m/d');?></p>
                   <?php foreach($cats as $cat):?>
                     <p class="c-category p-top-news__category"><a href="<?php echo get_category_link( $cat->cat_ID ); ?>"><?php echo $cat->cat_name; ?></a></p>
                   <?php endforeach;?>

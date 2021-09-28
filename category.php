@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <?php endwhile;
-                the_posts_pagination( $args );
+                //the_posts_pagination( $args );
                 wp_reset_postdata();else:?>
                 <div class="p-archive__article">
                         <div class="p-top-news__group">
@@ -76,9 +76,9 @@
                 <!-- ページナビ Prime Strategy Page Naviプラグインの場合はこれでスタイルもOK-->
                 <!--
                 <?php
-                    if (function_exists('page_navi')) :
+                   /* if (function_exists('page_navi')) :
                         page_navi('');
-                    endif;
+                    endif;*/
                 ?>
                 -->
                 <!-- <div class="page_navi">
