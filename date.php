@@ -5,7 +5,7 @@
             <?php //現在のカテゴリーを取得
             $year = get_the_time('Y');
             if($year!=null):
-                echo $year;
+                echo $year.'年';
             else:
                 echo 'News';
             endif;
