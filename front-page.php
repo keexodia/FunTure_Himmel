@@ -76,7 +76,7 @@
                     <span>ニュース</span>
                     </h2>
                     <div class="c-btn c-btn-short p-top-news__btn">
-                    <a href="">view more</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>news/">view more</a>
                     </div>
                 </div>
                 <div class="p-top-news__article">

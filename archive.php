@@ -37,6 +37,9 @@
               </div>
             </div>
             <?php endforeach;
+            the_posts_pagination( array(
+              'end_size'	=> '3', // ページ番号リストの両端に表示するページ数
+                  'mid_size' 	=> '1',) );
             else:?>
             <div class="p-archive__article">
               <div class="p-top-news__group">
@@ -46,23 +49,6 @@
               </div>
             </div>
             <?php endif;wp_reset_postdata();?>
-
-            <!-- ページナビ Prime Strategy Page Naviプラグインの場合はこれでスタイルもOK-->
-            <!--
-              <?php
-                  if (function_exists('page_navi')) :
-                    page_navi('');
-                  endif;
-              ?>
-            -->
-            <!-- <div class="page_navi">
-              <ul>
-                <li class="current"><span>1</span></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-              </ul>
-            </div> -->
-            <!-- /.page-navu -->
           </div>
                   <?php require_once dirname(__FILE__) .'/template/sidebar.php';?>
         </div>

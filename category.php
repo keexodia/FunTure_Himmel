@@ -64,7 +64,9 @@
                     </div>
                 </div>
                 <?php endwhile;
-                the_posts_pagination( $args );
+                the_posts_pagination( array(
+					'end_size'	=> '3', // ページ番号リストの両端に表示するページ数
+        			'mid_size' 	=> '1',) );
                 wp_reset_postdata();else:?>
                 <div class="p-archive__article">
                         <div class="p-top-news__group">
