@@ -60,9 +60,11 @@
               <p class="p-archive__topic">アーカイブ</p>
               <ul class="p-archive__links">
                 <?php for($year_cnt = 2021;$year_cnt>=2005;$year_cnt--):?>
+                  <?php if($year_cnt != 2006):?>
                 <li class="p-archive__link">
                   <a href="<?php echo get_year_link( $year_cnt );?>"><?php echo $year_cnt;?>年</a>
                 </li>
+                <?php endif?>
                 <?php endfor;?>
               </ul>
             </div>
