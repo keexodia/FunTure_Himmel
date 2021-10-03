@@ -27,9 +27,14 @@
               <div class="p-top-news__group">
                 <div class="p-top-news__infomation">
                   <p class="p-archive__date"><?php the_date('Y/m/d');?></p>
-                  <?php foreach($cats as $cat):?>
-                    <p class="c-category p-top-news__category"><a href="<?php echo get_category_link( $cat->cat_ID ); ?>"><?php echo $cat->cat_name; ?></a></p>
-                  <?php endforeach;?>
+                  <?php
+                            $categories = get_the_category();
+                            foreach( $categories as $category ):
+                                    $this_category_color = get_field( 'category-color', 'category_' . $category->term_id );
+                                    $this_category_text_color = get_field( 'category-text-color', 'category_' . $category->term_id );
+                        ?>
+                            <p class="c-category p-top-news__category" style="background-color:<?php echo $this_category_color; ?>";><a href="<?php echo get_category_link($category->term_id);?>" style="color:<?php echo $this_category_text_color; ?>";><?php echo $category->name;?></a></p>
+                        <?php endforeach;?>
                 </div>
                 <div class="p-archive__post">
                   <a href="<?php the_permalink();?>"> <?php the_title();?></a>
