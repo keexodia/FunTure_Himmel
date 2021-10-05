@@ -289,6 +289,8 @@
                 </div>
                 <?php endwhile; ?>
             <?php endif;?>
+            </div>
+            <div class="p-link__wrap p-link__wrap--second">
             <?php if( have_rows('company_banner') ): ?>
                 <?php while( have_rows('company_banner') ): the_row();?>
                 <div class="p-link__item p-link__item--asset">
