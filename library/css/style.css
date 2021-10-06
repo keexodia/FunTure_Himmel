@@ -1369,7 +1369,6 @@ nav.globalMenuSp.active {
 	font-size: 0.875rem;
 	margin-left: -0.625rem;
 	margin-top: 3.125rem;
-	margin-bottom: 0.625rem;
 	text-align: left;
 }
 
@@ -1396,6 +1395,7 @@ nav.globalMenuSp.active {
 	justify-content: center;
 	line-height: 1rem;
 	margin-left: 0.625rem;
+	margin-bottom: 0.625rem;
 	padding: 0.625rem;
 	text-decoration: none;
 	transition: 0.5s;
@@ -3602,4 +3602,15 @@ input[type="submit"]{
 
 .p-link__wrap--second{
 	margin-top: 0%;
+}
+
+@media screen and (min-width:768px) {
+.p-slid--sp{
+display: none;
+}
+}
+@media screen and (max-width:768px) {
+.p-slid--pc{
+display: none;
+}
 }

@@ -4,21 +4,33 @@
     <section class="l-top-main p-top-main main-content">
         <div class="p-top-main__inner">
             <!-- slider -->
-            <div class="swiper p-top-main__slid p-slid">
+            <div class="swiper p-top-main__slid p-slid  p-slid--pc">
                 <div class="swiper-wrapper p-slid__item">
-                    <div class="swiper-slide p-slid__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/slide01.jpg"" alt="/" />
-                    </div>
-                    <div class="swiper-slide p-slid__img">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>service/space-weather/">
-                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/slide02.jpg"" alt="/" />
-                        </a>
-                    </div>
-                    <div class="swiper-slide p-slid__img">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>service/colorful/">
-                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/slide03.jpg"" alt="/" />
-                        </a>
-                    </div>
+
+                        <?php if( have_rows('top-slider') ): ?>
+                                <?php while( have_rows('top-slider') ): the_row();?>
+                                <div class="swiper-slide p-slid__img">
+                                    <?php if(get_sub_field('slider-url')):?><a href="<?php echo get_sub_field('slider-url');?>"><?php endif;?>
+                                        <?php if(get_sub_field('slider-img')):?><img src="<?php echo get_sub_field('slider-img');?>" alt="/" /><?php endif;?>
+                                    <?php if(get_sub_field('slider-url')):?></a><?php endif;?>
+                                </div>
+                                <?php endwhile; ?>
+                        <?php endif;?>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper p-top-main__slid p-slid  p-slid--sp">
+                <div class="swiper-wrapper p-slid__item">
+                    <?php if( have_rows('top-slider') ): ?>
+                        <?php while( have_rows('top-slider') ): the_row();?>
+                            <div class="swiper-slide p-slid__img p-slid--sp">
+                                <?php if(get_sub_field('slider-url')):?><a href="<?php echo get_sub_field('slider-url');?>"><?php endif;?>
+                                    <?php if(get_sub_field('slider-img-sp')):?><img src="<?php echo get_sub_field('slider-img-sp');?>" alt="/" /><?php endif;?>
+                                <?php if(get_sub_field('slider-url')):?></a><?php endif;?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif;?>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
