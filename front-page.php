@@ -162,30 +162,46 @@
             </h2>
             <div class="p-top-service__wrap">
                 <!-- loop -->
-                <?php
-                    $args = array(
-                        'post_type'      => 'service',
-                        'posts_per_page' => 5,
-                    );
-                    $posts = get_posts($args);
-                    foreach ( $posts as $post ): setup_postdata( $post );
-                ?>
-
-                <div class="c-card-tile p-top-service__card">
-                    <div class="c-card-img-tile">
-                        <img src="<?php echo get_field("photo"); ?>" alt="<?php the_title(); ?>" />
-                    </div>
-                    <div class="c-card-txt">
-                    <h3 class="c-card-title-tile"><?php the_title(); ?></h3>
-                    <p class="c-card-lead">
-                        <?php the_excerpt(); ?>
-                    </p>
-                    <div class="c-btn c-btn-short c-card-tile-btn">
-                        <a href="<?php the_permalink();?>">view more</a>
-                    </div>
-                    </div>
-                </div>
-                <?php endforeach; wp_reset_postdata();?>
+                <?php if( have_rows('service-top') ): ?>
+                    <?php while( have_rows('service-top') ): the_row();
+                        $service_post = get_sub_field('link');
+                    ?>
+                        <div class="c-card-tile p-top-service__card">
+                            <div class="c-card-img-tile">
+                                <img src="<?php echo get_sub_field('img');?>" alt="<?php echo get_sub_field('title');?>" />
+                            </div>
+                            <div class="c-card-txt">
+                            <h3 class="c-card-title-tile"><?php echo get_sub_field('title'); ?></h3>
+                            <p class="c-card-lead">
+                                <?php echo get_the_excerpt($service_post -> ID); ?>
+                            </p>
+                            <div class="c-btn c-btn-short c-card-tile-btn">
+                                <a href="<?php the_permalink($service_post -> ID); ?>">view more</a>
+                            </div>
+                            </div>
+                        </div>
+                    <?php endwhile;?>
+                <?php endif;?>
+                <?php if( have_rows('service-bottom') ): ?>
+                    <?php while( have_rows('service-bottom') ): the_row();
+                        $service_post = get_sub_field('link');
+                    ?>
+                        <div class="c-card-tile p-top-service__card">
+                            <div class="c-card-img-tile">
+                                <img src="<?php echo get_sub_field('img');?>" alt="<?php echo get_sub_field('title');?>" />
+                            </div>
+                            <div class="c-card-txt">
+                            <h3 class="c-card-title-tile"><?php echo get_sub_field('title'); ?></h3>
+                            <p class="c-card-lead">
+                                <?php echo get_the_excerpt($service_post -> ID); ?>
+                            </p>
+                            <div class="c-btn c-btn-short c-card-tile-btn">
+                                <a href="<?php the_permalink($service_post -> ID); ?>">view more</a>
+                            </div>
+                            </div>
+                        </div>
+                    <?php endwhile;?>
+                <?php endif;?>
                 <!-- /.loop -->
             </div>
         </div>
@@ -258,7 +274,7 @@
                                 </div>
                             <?php endif;?>
                             <div class="c-btn c-btn-short p-top-staff__btn">
-                                <a href="<?php the_permalink()?>">view more</a>
+                                <a href="<?php the_permalink();?>">view more</a>
                             </div>
                         </div>
                     </div>
