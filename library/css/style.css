@@ -3617,3 +3617,12 @@ display: none;
 display: none;
 }
 }
+
+@media screen and (max-width: 1300px) {
+	.wp-block-image .alignleft,
+	.wp-block-image .alignright {
+		float: none;
+		margin: 2rem auto;
+	}
+	}
+	
