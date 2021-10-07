@@ -3491,10 +3491,10 @@ input[type="submit"]{
 .family-comunity > div .wp-block-column{
 	margin: 0;
 }
-.family-comunity > div img{
+/*.family-comunity > div img{
 	height: 22rem;
 	object-fit: cover;
-}
+}*/
 .p-single-service__container{
 	padding: 4.3rem 14.5rem;
 	padding-bottom:0rem;
