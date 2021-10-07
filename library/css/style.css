@@ -2303,7 +2303,7 @@ nav.globalMenuSp.active {
 
 .p-top-staff__text {
 	letter-spacing: 0.04em;
-	max-width: 80%;
+	max-width: 90%;
 }
 
 .p-top-staff__txt {
@@ -2636,6 +2636,9 @@ html {
 	display: none;
 }
 
+.p-top-staff__lead {
+	width: 60%;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -3137,7 +3140,7 @@ nav.globalMenuSp {
 	margin-left: 0;
 	margin-top: 1.25rem;
 	padding: 2.1875rem 0.625rem 2.1875rem 1.25rem;
-	width: 90%;
+	width: 100%;
 }
 
 .p-top-staff__lead--row {
@@ -3607,7 +3610,7 @@ input[type="submit"]{
 @media screen and (min-width:768px) {
 .p-slid--sp{
 display: none;
-}
+	}
 }
 @media screen and (max-width:768px) {
 .p-slid--pc{
