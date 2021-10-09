@@ -2052,7 +2052,7 @@ nav.globalMenuSp.active {
 
 .swiper-pagination-bullets{
 	left: 50%;
-    top: 98%;
+    top: 95%;
     transform: translate(-50%, -50%);
 }
 
@@ -3046,7 +3046,7 @@ nav.globalMenuSp {
 }
 
 .main-content {
-	margin-top: 3rem;
+	margin-top: 5rem;
 }
 
 .p-top-main__slid {
@@ -3607,14 +3607,27 @@ input[type="submit"]{
 	margin-top: 0%;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:767px) {
 .p-slid--sp{
-display: none;
+	display: none;
 	}
 }
 @media screen and (max-width:768px) {
 .p-slid--pc{
-display: none;
+	display: none;
+}
+.p-top-main{
+	max-height: inherit;
+}
+.p-top-main__slid{
+	height: inherit;
+	max-height: inherit;
+}
+.p-slid__img {
+	margin-bottom:5%;
+}
+.swiper-pagination-bullet {
+	width: 2.5rem;
 }
 }
 
