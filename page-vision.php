@@ -50,23 +50,37 @@
             <span>サービス</span>
             </h2>
             <div class="p-vision-service__wrap">
-                <?php
-                    $args = array(
-                        'post_type'      => 'service',
-                        'posts_per_page' => 5,
-                    );
-                    $posts = get_posts($args);
-                    foreach ( $posts as $post ): setup_postdata( $post );
-                ?>
-                <div class="c-card-short p-vision-service__card">
-                    <a href="<?php the_permalink();?>" class="c-card-short__link">
-                    <div class="c-card-img-short">
-                        <img src="<?php echo get_field("photo"); ?>" alt="<?php the_title(); ?>" />
-                    </div>
-                    <h3 class="c-card-title-short"><?php the_title(); ?></h3>
-                    </a>
-                </div>
-                <?php endforeach; wp_reset_postdata();?>
+
+            <?php $front_page_id = get_option( 'page_on_front' );
+            if( have_rows('service-top',$front_page_id) ): ?>
+                    <?php while( have_rows('service-top',$front_page_id) ): the_row();
+                        $service_post = get_sub_field('link');
+                    ?>
+                        <div class="c-card-short p-vision-service__card">
+                        <a href="<?php the_permalink($service_post -> ID);?>" class="c-card-short__link">
+                            <div class="c-card-img-short">
+                                <img src="<?php echo get_sub_field('img');?>" alt="<?php echo get_sub_field('title'); ?>" />
+                            </div>
+                            <h3 class="c-card-title-short"><?php echo get_sub_field('title'); ?></h3>
+                        </a>
+                        </div>
+                    <?php endwhile;?>
+                <?php endif;?>
+                <?php if( have_rows('service-bottom',$front_page_id) ): ?>
+                    <?php while( have_rows('service-bottom',$front_page_id) ): the_row();
+                        $service_post = get_sub_field('link');
+                    ?>
+                        <div class="c-card-short p-vision-service__card">
+                        <a href="<?php the_permalink($service_post -> ID);?>" class="c-card-short__link">
+                            <div class="c-card-img-short">
+                                <img src="<?php echo get_sub_field('img');?>" alt="<?php echo get_sub_field('title'); ?>" />
+                            </div>
+                            <h3 class="c-card-title-short"><?php echo get_sub_field('title'); ?></h3>
+                        </a>
+                        </div>
+                    <?php endwhile;?>
+                <?php endif;?>
+
             </div>
         </div>
     </section>
