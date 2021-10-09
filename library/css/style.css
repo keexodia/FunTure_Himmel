@@ -1791,7 +1791,7 @@ nav.globalMenuSp.active {
 	padding-top: 4.375rem;
 }
 
-.p-single__container h2 {
+.p-single__container h2,.p-service  .p-page__contents h2 {
 	border-bottom: 1px solid #0c0e14;
 	font-size: 1.4375rem;
 	line-height: 2.625rem;
@@ -1806,7 +1806,7 @@ nav.globalMenuSp.active {
 	margin-bottom: 1.875rem;
 }
 
-.p-single__container h3 {
+.p-single__container h3,.p-service .p-page__contents h3 {
 	border-bottom: 1px solid #ebebebeb;
 	font-size: 1.1875rem;
 	line-height: 2.625rem;
@@ -1825,7 +1825,7 @@ nav.globalMenuSp.active {
 	width: 6.25rem;
 }
 
-.p-single__container h4 {
+.p-single__container h4 ,.p-service .p-page__contents h4{
 	border-bottom: 1px solid #ebebebeb;
 	font-size: 1.1875rem;
 	line-height: 2.625rem;
@@ -1833,7 +1833,7 @@ nav.globalMenuSp.active {
 	padding-bottom: 0.3125rem;
 }
 
-.p-single__container h5 {
+.p-single__container h5 ,.p-service .p-page__contents h5{
 	font-size: 1rem;
 	line-height: 2.625rem;
 	margin-bottom: 1.4375rem;
@@ -1853,7 +1853,7 @@ nav.globalMenuSp.active {
 	width: 0.75rem;
 }
 
-.p-single__container h6 {
+.p-single__container h6, .p-service .p-page__contents h5{
 	font-size: 1rem;
 	line-height: 2.625rem;
 	margin-bottom: 1.4375rem;
