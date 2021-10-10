@@ -87,3 +87,4 @@ function my_setup()
     add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
     //グローバルナビメニューの第二階層にクラス付与
+   

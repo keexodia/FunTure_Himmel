@@ -25,65 +25,14 @@
 					<?php endif;?>
 				</a>
 				<?php
-            		// wp_nav_menu( array(
-					// 	'theme_location' => 'main-menu',
-					// 	'container_class' => 'p-header__nav',
-					// 	'menu_class' => 'p-header__item',
-					// 	'add_li_class'  => 'p-header__list',
-					// 	'items_wrap' =>  '<ul id="%1$s" class="%2$s">%3$s</ul><ul><li class="p-header__list p-header__contact"><a href="">CONTACT</a></li></ul>',
-					// 	//'walker' => new My_Walker_Nav_Menu,
-            		// ) );
+            		wp_nav_menu( array(
+						'theme_location' => 'main-menu',
+						'container_class' => 'p-header__nav',
+						'menu_class' => 'p-header__item',
+						'add_li_class'  => 'p-header__list',
+						'items_wrap' =>  '<ul id="%1$s" class="%2$s">%3$s</ul><ul><li class="p-header__list p-header__contact"><a href="">CONTACT</a></li></ul>',
+            		) );
 				?>
-				<div class="p-header__nav">
-					<ul class="p-header__item">
-						<li class="p-header__list">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a>
-						</li>
-						<li class="p-header__list">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>vision-mission/">VISION/MISSION</a>
-						</li>
-						<li class="p-header__list">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">ABOUT</a>
-						</li>
-						<li class="p-header__list p-header__drower">
-						<p>SERVICE</p>
-						<ul class="sub p-header__sub">
-							<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/lecture/">講演</a></li>
-							<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/space-weather/">宇宙天気</a></li>
-							<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/seminar/">ヒンメルゼミ</a></li>
-							<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/colorful/">彩り家族コミュニティ</a></li>
-							<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/coaching/">コーチング/コンサルティング</a></li>
-						</ul>
-						</li>
-						<li class="p-header__list p-header__drower">
-						<p>STAFF</p>
-						<ul class="sub p-header__sub">
-							 <?php
-								$args = array(
-									'post_type' => 'staff',
-									'post_per_page' => -1,
-								);
-								$posts = get_posts($args);
-								foreach($posts as $post):
-								setup_postdata($post);
-							?>
-							<li class="p-header__list--sub"><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
-							<?php
-								endforeach;
-								wp_reset_postdata();
-							?>
-						</ul>
-						</li>
-						<!-- <li class="p-header__list">
-						<a href="">NEWS</a>
-						</li> -->
-					</ul>
-					<ul>
-						<li class="p-header__list p-header__contact">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/">CONTACT</a>
-						</li>
-					</ul>
-				</div>
 
 				<!-- sp-nav -->
 				<div class="hamburger">
@@ -92,51 +41,15 @@
 				<span></span>
 				</div>
 				<?php
-            		// wp_nav_menu( array(
-					// 	'theme_location' => 'main-menu',
-					// 	'container' => 'nav',
-					// 	'container_class' => 'globalMenuSp',
-					// 	'menu_class' => 'p-header__item',
-					// 	'add_li_class'  => 'p-header__list',
-					// 	'items_wrap' =>  '<ul id="%1$s" class="%2$s">%3$s</ul><ul><li class="p-header__list p-header__contact"><a href="">CONTACT</a></li></ul>',
-					// 	//'walker' => new cs_walker_nav_menu,
-            		// ) );
+            		wp_nav_menu( array(
+						'theme_location' => 'main-menu',
+						'container' => 'nav',
+						'container_class' => 'globalMenuSp',
+						'menu_class' => 'p-header__item',
+						'add_li_class'  => 'p-header__list',
+						'items_wrap' =>  '<ul id="%1$s" class="%2$s">%3$s</ul><ul><li class="p-header__list p-header__contact"><a href="">CONTACT</a></li></ul>',
+            		) );
         		?>
-				<nav class="globalMenuSp">
-				<ul class="p-header__item">
-					<li class="p-header__list">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a>
-					</li>
-					<li class="p-header__list">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>vision-mission/">VISION/MISSION</a>
-					</li>
-					<li class="p-header__list">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">ABOUT</a>
-					</li>
-					<li class="p-header__list p-header__drower">
-					<a href="">SERVICE</a>
-					<ul class="sub p-header__sub">
-						<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/lecture/">講演</a></li>
-						<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/space-weather/">宇宙天気</a></li>
-						<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/seminar/">ヒンメルゼミ</a></li>
-						<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/colorful/">彩り家族コミュニティ</a></li>
-						<li class="p-header__list--sub"><a href="<?php echo esc_url( home_url( '/' ) ); ?>service/coaching/">コーチング/コンサルティング</a></li>
-					</ul>
-					</li>
-					<li class="p-header__list p-header__drower">
-					<a href="">STAFF</a>
-					</li>
-					<!-- <li class="p-header__list">
-					<a href="">NEWS</a>
-					</li> -->
-				</ul>
-				<ul>
-					<li class="p-header__list p-header__contact">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/">CONTACT</a>
-					</li>
-				</ul>
-				</nav>
-				<!-- /. -->
 			</div>
 		</header>
 		<!-- /.header -->

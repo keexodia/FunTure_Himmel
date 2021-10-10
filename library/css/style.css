@@ -1291,20 +1291,20 @@ nav.globalMenuSp.active {
 	opacity: 0;
 }
 
-.p-header__sub {
+.sub-menu {
 	display: none;
 	position: absolute;
 	width: 17.125rem;
 	z-index: 200;
 }
 
-.p-header__item .p-header__list:hover .p-header__sub {
+.p-header__item .p-header__list:hover .sub-menu {
 	background: #0c3662;
 	color: #fff;
 	display: block;
 }
 
-.p-header__sub .p-header__list--sub a {
+.sub-menu .p-header__list a {
 	display: block;
 	letter-spacing: 0.03em;
 	line-height: 3.5625rem;
@@ -1312,7 +1312,7 @@ nav.globalMenuSp.active {
 	width: 100%;
 }
 
-.p-header__sub .p-header__list--sub a:hover {
+.sub-menu .p-header__list a:hover {
 	background: #0c4177;
 	display: block;
 	width: 100%;
@@ -2840,14 +2840,14 @@ nav.globalMenuSp {
 	width: 80%;
 }
 
-.p-header__sub {
+.sub-menu {
 	display: block;
 	margin: 0 auto;
 	position: static;
 	width: 100%;
 }
 
-.p-header__sub .p-header__list--sub a {
+.sub-menu .p-header__list a {
 	font-size: 0.8125rem;
 	line-height: 2.5rem;
 	padding-left: 0;
@@ -2855,7 +2855,7 @@ nav.globalMenuSp {
 	position: relative;
 }
 
-.p-header__sub .p-header__list--sub a::after {
+.sub-menu .p-header__list a::after {
 	background-color: #fff;
 	content: '';
 	height: 0.0625rem;
