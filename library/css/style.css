@@ -1808,11 +1808,11 @@ nav.globalMenuSp.active {
 
 .p-single__container h3,.p-service .p-page__contents h3 ,.p-page__container h3{
 	border-bottom: 1px solid #ebebebeb;
-	font-size: 1.1875rem;
-	line-height: 2.625rem;
-	margin-bottom: 1.4375rem;
-	padding-bottom: 0.3125rem;
-	position: relative;
+    font-size: 1.1875rem;
+    line-height: 2rem;
+    margin-bottom: 1.4375rem;
+    padding-bottom: 0.8rem;
+    position: relative;
 }
 
 .p-single__container h3::before,.p-service .p-page__contents h3::before,.p-page__container h3::before {
