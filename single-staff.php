@@ -2,10 +2,10 @@
     <!-- main-content -->
     <section class="main-content l-single-staff p-single-staff">
         <div class="p-single-staff__inner">
-            <h2 class="c-title c-title-big p-single-staff__title">
+            <h1 class="c-title c-title-big p-single-staff__title">
             staff
             <span>スタッフ</span>
-            </h2>
+            </h1>
             <div class="p-single-staff__wrap">
             <div class="p-single-staff__item">
                 <div class="p-single-staff__img">

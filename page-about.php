@@ -8,10 +8,10 @@
 
     <section class="main-content l-about-content p-about">
         <div class="l-inner p-about__inner">
-            <h2 class="c-title c-title-big p-about__title">
+            <h1 class="c-title c-title-big p-about__title">
             about
             <span>会社概要</span>
-            </h2>
+            </h1>
             <div class="p-about__information">
             <div class="p-about__summary">
                 <p class="p-about__detail">社名</p>

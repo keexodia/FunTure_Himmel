@@ -7,10 +7,10 @@
 <?php get_header(); ?>
 
     <section class="l-about-content p-about p-thanks">
-            <h2 class="c-title c-title-big p-contact__title">
+            <h1 class="c-title c-title-big p-contact__title">
             Thanks
             <span>お問い合わせ送信完了</span>
-            </h2>
+            </h1>
         <div class="l-inner p-contact__inner">
             <div>
                 この度は、お問い合わせいただきまして、<br>

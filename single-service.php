@@ -8,10 +8,10 @@
                 $title = $category[0]->category_nicename;
                 $title = str_replace('-',' ',$title);
             ?>
-            <h2 class="c-title c-title-big p-single__title">
+            <h1 class="c-title c-title-big p-single__title">
             <?php echo $title;?>
             <span><?php echo $category[0]->name;?></span>
-            </h2>
+            </h1>
             <div class="p-page__wrapper">
             <div class="p-page__contents" id="page-content">
                 <?php if(get_field("photo")):?>

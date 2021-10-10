@@ -5,12 +5,10 @@
             <?php if(get_field("upper_title")):?>
                 <p class="p-single__subtitle"><?php echo get_field("upper_title"); ?></p>
             <?php endif;?>
-            <h2 class="c-title c-title-big p-single__title">
+            <h1 class="c-title c-title-big p-single__title">
             <?php echo get_field("page_english_title"); ?>
-            <?php if(get_field("bottom_title")):?>
-                <span><?php echo get_field("bottom_title"); ?></span>
-            <?php endif;?>
-            </h2>
+                <span><?php the_title(); ?></span>
+            </h1>
             <div class="p-page__wrapper">
             <div class="p-page__contents" id="page-content">
                 <?php if(get_field("page_img")):?>

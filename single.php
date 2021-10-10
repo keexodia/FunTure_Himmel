@@ -6,10 +6,10 @@
                 $category = get_the_category();
                 //echo $category[0]->name;
             ?>
-            <h2 class="c-title c-title-big p-single__title">
+            <h1 class="c-title c-title-big p-single__title">
             <?php echo $category[0]->category_nicename;?>
             <span><?php echo $category[0]->name;?></span>
-            </h2>
+            </h1>
             <div class="p-single__wrapper">
             <div class="p-single__contents" id="single-content">
                 <p class="p-single__date"><?php the_date('Y/m/d');?></p>

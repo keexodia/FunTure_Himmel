@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <section class="main-content l-archive-content p-archive">
         <div class="l-inner p-archive__inner">
-            <h2 class="c-title c-title-big p-archive__title">
+            <h1 class="c-title c-title-big p-archive__title">
             <?php //現在のカテゴリーを取得
             $year = get_the_time('Y');
             if($year!=null):
@@ -11,7 +11,7 @@
             endif;
             ?>
             <span><?php echo 'お知らせ';?></span>
-            </h2>
+            </h1>
             <div class="p-archive__wrapper">
             <div class="p-archive__contents" id="content">
                 <!-- loop -->

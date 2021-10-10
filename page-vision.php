@@ -8,10 +8,10 @@
     <!-- main-content -->
     <section class="main-content l-vision-content p-vision">
         <div class="p-vision__inner">
-            <h2 class="c-title c-title-big p-vision__title">
+            <h1 class="c-title c-title-big p-vision__title">
             vision/mission
             <span>ビジョン/ミッション</span>
-            </h2>
+            </h1>
             <div class="p-vision__mv">
             <img src="<?php echo get_template_directory_uri(); ?>/library/images/vision.jpg" alt="vision" />
             </div>

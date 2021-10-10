@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <section class="main-content l-archive-content p-archive">
         <div class="l-inner p-archive__inner">
-            <h2 class="c-title c-title-big p-archive__title">
+            <h1 class="c-title c-title-big p-archive__title">
             <?php //現在のカテゴリーを取得
             $category_slug = get_query_var('category_name');
             $cate_info = get_category_by_slug($category_slug);
@@ -21,7 +21,7 @@
                 echo 'お知らせ';
             endif;
             ?></span>
-            </h2>
+            </h1>
             <div class="p-archive__wrapper">
             <div class="p-archive__contents" id="content">
                 <!-- loop -->

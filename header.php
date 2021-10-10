@@ -14,9 +14,15 @@
 		<header class="l-header p-header">
 			<div class="p-header__inner">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<?php if(is_home() || is_front_page()):?>
+					<h1 class="p-header__logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/himmel_logo.jpg" alt="<?php  bloginfo( 'name' ); ?>" />
+					</h1>
+					<?php else:?>
 					<div class="p-header__logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/library/images/himmel_logo.jpg" alt="<?php  bloginfo( 'name' ); ?>" />
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/himmel_logo.jpg" alt="<?php  bloginfo( 'name' ); ?>" />
 					</div>
+					<?php endif;?>
 				</a>
 				<?php
             		// wp_nav_menu( array(
