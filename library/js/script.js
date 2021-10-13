@@ -35,4 +35,8 @@ jQuery(function ($) {
       jQuery('.globalMenuSp').removeClass('active')
     }
   })
+  jQuery('.mod-table-toggle .mod-table__head').on('click',function(){
+    jQuery(this).toggleClass('open');
+    jQuery(this).next('.mod-table__detail').slideToggle();
+  });
 })
