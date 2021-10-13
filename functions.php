@@ -70,7 +70,7 @@ function my_setup()
       register_nav_menus( array( //複数のナビゲーションメニューを登録する関数
       //'「メニューの位置」の識別子' => 'メニューの説明の文字列',
         'main-menu' => 'Main Menu',
-        'main-menu-sp' => 'Main Menu SP',
+        //'main-menu-sp' => 'Main Menu SP',
         'footer-menu'  => 'Footer Menu',
       ) );
     }
