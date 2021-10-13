@@ -1980,7 +1980,12 @@ nav.globalMenuSp.active {
 		object-fit: contain;
 		width: 100%;
 	}
-
+	.p-footer__nav>ul {
+		display: block;
+	}
+	.p-footer__item>.p-footer__list + .p-footer__list {
+		margin-top: 1rem;
+	}
 }
 
 
@@ -3651,4 +3656,20 @@ input[type="submit"]{
 }
 .footer-menu--hidden>a{
 	display: none;
+}
+
+@media screen and (max-width:768px) {
+	.p-link__asset img {
+		-o-object-fit: contain;
+		display: inline-block;
+		height: 100%;
+		object-fit: contain;
+		width: 100%;
+	}
+	.p-footer__nav>ul {
+		display: block;
+	}
+	.p-footer__item>.p-footer__list + .p-footer__list {
+		margin-top: 1rem;
+	}
 }

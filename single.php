@@ -17,8 +17,10 @@
                 <?php
                     $categories = get_the_category();
                     foreach( $categories as $category ):
+                        $this_category_color = get_field( 'category-color', 'category_' . $category->term_id );
+                        $this_category_text_color = get_field( 'category-text-color', 'category_' . $category->term_id );
                 ?>
-                <p class="c-category p-single__category"><a href="<?php echo get_category_link($category->term_id);?>"><?php echo $category->name;?></a></p>
+                <p class="c-category p-single__category" style="background-color:<?php echo $this_category_color; ?>";><a href="<?php echo get_category_link($category->term_id);?>" style="color:<?php echo $this_category_text_color; ?>";><?php echo $category->name;?></a></p>
                 <?php endforeach;?>
 
                 <div class="p-single__container">

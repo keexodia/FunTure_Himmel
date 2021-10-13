@@ -4,13 +4,13 @@
         <div class="l-page__inner p-single__inner p-service__inner">
             <p class="p-single__subtitle">service</p>
             <?php
-                $category = get_the_category();
-                $title = $category[0]->category_nicename;
-                $title = str_replace('-',' ',$title);
+                $terms = get_the_terms( $post->ID, 'service_category' );
             ?>
             <h1 class="c-title c-title-big p-single__title">
-            <?php echo $title;?>
-            <span><?php echo $category[0]->name;?></span>
+				<?php $title = $terms[0]->slug;
+							echo $title = str_replace('-',' ',$title);
+				?>
+            <span><?php echo $terms[0]->name;?></span>
             </h1>
             <div class="p-page__wrapper">
             <div class="p-page__contents" id="page-content">
