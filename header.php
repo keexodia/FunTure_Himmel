@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		<meta name="format-detection" content="telephone=no" />
 		<!-- meta情報 -->
-		<title><?php if(wp_title()): wp_title();?> | <?php endif;?><?php echo get_bloginfo('get_bloginfo'); ?> </title>
+		<title><?php if(!(is_home()||is_front_page())):wp_title();?> | <?php endif;?><?php echo get_bloginfo('get_bloginfo'); ?> </title>
 		<?php wp_head(); ?>
 	</head>
 
