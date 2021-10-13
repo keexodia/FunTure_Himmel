@@ -25,7 +25,7 @@
 
         <!-- breadcrumb -->
         <div class="l-breadcrumb-area">
-        <ul class="p-breadcrumb">
+        <ul class="p-breadcrumb page-uppercase">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
             <li><?php the_title(); ?></li>
         </ul>

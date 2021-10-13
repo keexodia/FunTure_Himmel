@@ -13,7 +13,7 @@
             <div class="p-single__wrapper">
             <div class="p-single__contents" id="single-content">
                 <p class="p-single__date"><?php the_date('Y/m/d');?></p>
-                <h3 class="p-single__post-title"><?php the_title();?></h3>
+                <h3 class="p-single__post-title page-uppercase"><?php the_title();?></h3>
                 <?php
                     $categories = get_the_category();
                     foreach( $categories as $category ):
@@ -51,7 +51,7 @@
 
         <!-- breadcrumb -->
         <div class="l-breadcrumb-area">
-        <ul class="p-breadcrumb">
+        <ul class="p-breadcrumb page-uppercase">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
             <li><?php the_title();?></li>
         </ul>

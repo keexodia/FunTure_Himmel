@@ -36,8 +36,8 @@
                             <p class="c-category p-top-news__category" style="background-color:<?php echo $this_category_color; ?>";><a href="<?php echo get_category_link($category->term_id);?>" style="color:<?php echo $this_category_text_color; ?>";><?php echo $category->name;?></a></p>
                         <?php endforeach;?>
                 </div>
-                <div class="p-archive__post">
-                  <a href="<?php the_permalink();?>"> <?php the_title();?></a>
+                <div class="p-archive__post page-uppercase">
+                  <a href="<?php the_permalink();?>" class="page-uppercase"> <?php the_title();?></a>
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@
             else:?>
             <div class="p-archive__article">
               <div class="p-top-news__group">
-                <div class="p-archive__post">
+                <div class="p-archive__post page-uppercase">
                   <p>投稿記事はありません。</p>
                 </div>
               </div>
@@ -62,7 +62,7 @@
 
     <!-- breadcrumb -->
     <div class="l-breadcrumb-area">
-      <ul class="p-breadcrumb">
+      <ul class="p-breadcrumb page-uppercase">
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
         <li><?php the_title(); ?></li>
       </ul>

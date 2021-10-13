@@ -7,7 +7,7 @@
             <?php endif;?>
             <h1 class="c-title c-title-big p-single__title">
             <?php echo get_field("page_english_title"); ?>
-                <span><?php the_title(); ?></span>
+                <span class="page-uppercase"><?php the_title(); ?></span>
             </h1>
             <div class="p-page__wrapper">
             <div class="p-page__contents" id="page-content">
@@ -22,7 +22,7 @@
 
         <!-- breadcrumb -->
         <div class="l-breadcrumb-area">
-        <ul class="p-breadcrumb">
+        <ul class="p-breadcrumb page-uppercase">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
             <li><?php the_title(); ?></li>
         </ul>

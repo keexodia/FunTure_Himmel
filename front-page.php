@@ -235,7 +235,7 @@
                     <div class="p-top-staff__lead">
                         <div class="p-top-staff__name">
                             <p class="p-top-staff__en"><?php echo get_field('name_english');?></p>
-                            <p class="p-top-staff__ja"><?php the_title();?></p>
+                            <p class="p-top-staff__ja" class="page-uppercase"><?php the_title();?></p>
                         </div>
                         <div class="p-top-staff__text">
                             <?php if( have_rows('achievement') ): ?>
