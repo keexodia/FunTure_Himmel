@@ -3321,7 +3321,8 @@ h3.p-top-vision__think {
     padding-bottom: 1rem;
 }
 .p-page__container p,.p-page__container h2,.p-page__container h3,.p-page__container h4,.p-page__container h5,.p-page__container h6{
-	margin:1.5rem 0rem;
+	margin:2rem 0rem;
+	line-height: 2rem;
 }
 .p-page__container ul{
 	/*padding-bottom: 1rem;
@@ -3614,7 +3615,7 @@ input[type="submit"]{
 	margin-top: 0%;
 }
 
-@media screen and (min-width:767px) {
+@media screen and (min-width:769px) {
 .p-slid--sp{
 	display: none;
 	}
