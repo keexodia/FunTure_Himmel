@@ -3841,3 +3841,18 @@ transition: 0.5s;
 	font-size: 14px;
 }
 }
+#pagetop{
+	width: 2.8rem;
+	height:2.8rem;
+	background:#002e5d;
+	padding: 1rem 0.8rem;
+	position: fixed;
+	bottom: 1.4rem;
+	right: 1.5rem;
+	z-index: 10001;
+  }
+  
+	#pagetop a img{
+		width: 100%;
+		max-width: 100%;
+   }

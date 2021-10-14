@@ -15,6 +15,11 @@
 		<div class="p-footer__copyright">
 			<small>&copy;Himmel All Rights Reserved.</small>
 		</div>
-		</footer>
+		<div id="pagetop">
+			<a href="#">
+				<img src="https://funtre-design.com/himmel/wp/wp-content/uploads/2021/10/button-arrow2x.png">
+			</a>
+		</div>
+	</footer>
 	</body>
 </html>

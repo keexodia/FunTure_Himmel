@@ -39,4 +39,25 @@ jQuery(function ($) {
     jQuery(this).toggleClass('open');
     jQuery(this).next('.mod-table__detail').slideToggle();
   });
-})
+});
+
+const topBtn = jQuery('#pagetop');
+  topBtn.hide();
+
+  // ボタンの表示設定
+  jQuery(window).scroll(function () {
+    if ($(this).scrollTop() > 70) {
+      // 指定px以上のスクロールでボタンを表示
+      topBtn.fadeIn();
+    } else {
+      // 画面が指定pxより上ならボタンを非表示
+      topBtn.fadeOut();
+    }
+  });
+// ボタンをクリックしたらスクロールして上に戻る
+  topBtn.click(function () {
+    ('body,html').animate({
+      scrollTop: 0
+    }, 300, 'swing');
+    return false;
+  });
