@@ -15,7 +15,7 @@
             <div class="p-vision__mv">
             <img src="<?php echo get_template_directory_uri(); ?>/library/images/vision.jpg" alt="vision" />
             </div>
-            <h3 class="p-vision__think">Think Future, Make My Story</h3>
+            <h2 class="p-vision__think">Think Future, Make My Story</h2>
             <div class="p-vision__text">
             <p class="p-vision__txt">空を見上げ、『天気』を予想し、伝える。</p>
             <p class="p-vision__txt">自分・社会を見つめ、『転機／チャンス』を掴み、進む。</p>

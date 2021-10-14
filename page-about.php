@@ -35,7 +35,7 @@
             </div>
             </div>
             <div class="p-about-service">
-            <h3 class="p-about-service__title">事業内容</h3>
+            <h2 class="p-about-service__title">事業内容</h2>
             <div class="p-about-service__wrap">
                 <ul class="p-about-service__item">
                 <li class="p-about-service__list">気象予報業務及びそれに付随する業務</li>
