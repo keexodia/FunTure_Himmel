@@ -301,7 +301,7 @@
             <?php if( have_rows('sns_banner') ): ?>
                 <?php while( have_rows('sns_banner') ): the_row();?>
                 <div class="p-link__item">
-                    <a href="<?php echo get_sub_field('sns_link');?>" class="p-link__block">
+                    <a href="<?php echo get_sub_field('sns_link');?>" class="p-link__block" <?php if(get_sub_field('link_tab')):?> target="_blank" <?php endif;?>>
                         <div class="p-link__sns">
                             <img src="<?php echo get_sub_field('sns_logo');?>" alt="sns" />
                         </div>
@@ -322,7 +322,7 @@
             <?php if( have_rows('company_banner') ): ?>
                 <?php while( have_rows('company_banner') ): the_row();?>
                 <div class="p-link__item p-link__item--asset">
-                    <a href="<?php echo get_sub_field('company_link');?>" class="p-link__block p-link__block--asset">
+                    <a href="<?php echo get_sub_field('company_link');?>" class="p-link__block p-link__block--asset" <?php if(get_sub_field('link_tab')):?> target="_blank" <?php endif;?>>
                     <div class="p-link__asset">
                         <img src="<?php echo get_sub_field('company_logo');?>" alt="<?php echo get_sub_field('company');?>" />
                     </div>
