@@ -3850,10 +3850,21 @@ transition: 0.5s;
 	position: fixed;
 	bottom: 1.4rem;
 	right: 1.5rem;
-	z-index: 10001;
+	z-index: 1000;
   }
   
 	#pagetop a img{
 		width: 100%;
 		max-width: 100%;
    }
+
+@media screen and (max-width: 767px) {
+	nav.globalMenuSp ul li:hover {
+		background: none;
+		color: white;
+	}
+	.p-header__item .p-header__list:hover .sub-menu {
+		background: none;
+		color: white;
+	}
+}
