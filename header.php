@@ -29,7 +29,7 @@
 						'container_class' => 'p-header__nav',
 						'menu_class' => 'p-header__item',
 						'add_li_class'  => 'p-header__list',
-						'items_wrap' =>  '<ul id="%1$s" class="%2$s">%3$s</ul><ul><li class="p-header__list p-header__contact"><a href="">CONTACT</a></li></ul>',
+						'items_wrap' =>  '<ul id="%1$s" class="%2$s">%3$s</ul><ul><li class="p-header__list p-header__contact"><a href="https://tenki-saita.com/contact/">CONTACT</a></li></ul>',
             		) );
 				?>
 
@@ -46,7 +46,7 @@
 						'container_class' => 'globalMenuSp',
 						'menu_class' => 'p-header__item',
 						'add_li_class'  => 'p-header__list',
-						'items_wrap' =>  '<ul id="%1$s" class="%2$s">%3$s</ul><ul><li class="p-header__list p-header__contact"><a href="">CONTACT</a></li></ul>',
+						'items_wrap' =>  '<ul id="%1$s" class="%2$s">%3$s</ul><ul><li class="p-header__list p-header__contact"><a href="https://tenki-saita.com/contact/">CONTACT</a></li></ul>',
             		) );
         		?>
 			</div>
