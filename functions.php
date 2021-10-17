@@ -7,6 +7,7 @@ function my_setup()
     add_theme_support('post-thumbnails'); // アイキャッチ画像を有効化
     add_theme_support('automatic-feed-links'); // 投稿とコメントのRSSフィードのリンクを有効化
     //add_theme_support('title-tag'); // タイトルタグ自動生成
+    add_theme_support('widgets');
     add_theme_support(
     'html5',
     array( //HTML5でマークアップ
@@ -86,5 +87,12 @@ function my_setup()
     }
     add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 
-    //グローバルナビメニューの第二階層にクラス付与
-   
+    //widget
+    register_sidebar(array(
+      'name' => 'Sidebar' ,
+      'id' => 'sidebar' ,
+      'before_widget' => '<div class="widget">',
+      'after_widget' => '</div>',
+      'before_title' => '<h3>',
+      'after_title' => '</h3>'
+ ));

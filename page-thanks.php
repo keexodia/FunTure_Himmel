@@ -7,7 +7,8 @@
 <?php get_header(); ?>
 
     <section class="l-about-content p-about p-thanks">
-            <h1 class="c-title c-title-big p-contact__title">
+    <?php the_content();?>
+            <!-- <h1 class="c-title c-title-big p-contact__title">
             Thanks
             <span>お問い合わせ送信完了</span>
             </h1>
@@ -20,7 +21,7 @@
                 ※自動返信メールが届いていない場合、<br>
                 迷惑メールフォルダもご確認ください。
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- breadcrumb -->

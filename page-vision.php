@@ -7,7 +7,8 @@
 <?php get_header(); ?>
     <!-- main-content -->
     <section class="main-content l-vision-content p-vision">
-        <div class="p-vision__inner">
+    <?php the_content();?>    
+    <!-- <div class="p-vision__inner">
             <h1 class="c-title c-title-big p-vision__title">
             vision/mission
             <span>ビジョン/ミッション</span>
@@ -38,7 +39,7 @@
                 大テーマは、環境問題、気象、都市計画、住宅、まちづくり等ですが、それは一人ひとり、そして社会の最小単位である家庭にも繋がっています。これからの教育も非常に重要と考えており、私たちのあり方、生き方そのものとも捉えています。コミュニケーションを大事に真摯に取り組んで参ります。
             </p>
             </div>
-        </div>
+        </div> -->
     </section>
     <!-- /.main-content -->
 

@@ -13,7 +13,7 @@
             <span>お問い合わせ</span>
             </h1>
             <div class="p-about__information">
-                <?php echo do_shortcode('[contact-form-7 id="718" title="コンタクトフォーム 1_copy"]');?>
+                <?php the_content();?>
             </div>
         </div>
     </section>
