@@ -1583,6 +1583,10 @@ nav.globalMenuSp.active {
   width: 0.3125rem;
 }
 
+.p-archive__stafftitle{
+	margin-bottom: 5rem;
+}
+
 .p-archive__archive {
   padding-top: 3.75rem;
 }
