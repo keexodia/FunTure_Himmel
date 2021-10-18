@@ -1430,12 +1430,13 @@ nav.globalMenuSp.active {
   padding-bottom: 5.8125rem;
 }
 
-.p-about-service__title {
+.p-page__container h2.p-about-service__title {
   border-bottom: 1px solid #333;
   font-size: 1.4375rem;
   font-weight: bold;
   line-height: 2.8125rem;
   padding-bottom: 0.875rem;
+  margin-bottom: 0;
 }
 
 .p-about-service__wrap {
@@ -1446,7 +1447,7 @@ nav.globalMenuSp.active {
 .p-about-service__item {
   font-size: 1rem;
   line-height: 2.125rem;
-  list-style: disc;
+  /*list-style: disc;*/
 }
 
 .p-about__inner {
@@ -1473,16 +1474,18 @@ nav.globalMenuSp.active {
   padding-top: 2rem;
 }
 
-.p-about__detail {
+.p-page__container p.p-about__detail {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.875rem;
   width: 20.2%;
+  margin: 0;
 }
 
-.p-about__description {
+.p-page__container p.p-about__description {
   flex: 1;
   font-size: 1rem;
+  margin: 0;
 }
 
 #content {
@@ -2940,12 +2943,12 @@ h3.p-top-vision__think {
     padding-bottom: 1.25rem;
   }
 
-  .p-about__detail {
+  .p-page__container p.p-about__detail {
     font-size: 0.875rem;
     width: 27%;
   }
 
-  .p-about__description {
+  .p-page__container p.p-about__description {
     font-size: 0.875rem;
   }
 
