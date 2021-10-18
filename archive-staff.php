@@ -85,7 +85,7 @@
     <div class="l-breadcrumb-area">
       <ul class="p-breadcrumb page-uppercase">
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
-        <li><?php the_title(); ?></li>
+        <li>STAFF一覧</li>
       </ul>
     </div>
     <!-- /.breadcrumb -->
