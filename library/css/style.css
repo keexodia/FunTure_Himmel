@@ -2870,11 +2870,11 @@ h3.p-top-vision__think {
   .p-header__item {
     display: block;
     font-size: 1rem;
-    padding-top: 7.5rem;
+    padding-top: 3.5rem;
   }
 
   .p-header__item .p-header__list > a {
-    line-height: 5rem;
+    line-height: 3rem;
     padding: 0 1.25rem;
   }
 
@@ -3421,10 +3421,11 @@ h3.p-top-vision__think {
   border-bottom: none;
 }
 .contact_form > div > p:first-child {
-  width: 20%;
+  width: 30%;
 }
 .contact_form > div > p:nth-child(2) {
-  padding-left: 3.3rem;
+  /*padding-left: 3.3rem;*/
+  width: 70%;
 }
 .contact_form > div span.wpcf7-list-item {
   display: block;
@@ -3440,6 +3441,8 @@ input[type="text"],
 input[type="email"],
 input[type="tel"] {
   line-height: 2.35rem;
+  width: 100%;
+  display: block;
 }
 input[type="submit"] {
   width: 35%;
@@ -3448,7 +3451,7 @@ input[type="submit"] {
   color: white;
 }
 .contact_form textarea {
-  width: 33rem;
+  width: 31.5rem;
   height: 18rem;
   resize: none;
 }
@@ -3488,12 +3491,13 @@ input[type="submit"] {
   input[type="text"],
   input[type="email"],
   input[type="tel"] {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     width: 80vw;
   }
   .contact_form > div > p:nth-child(2) {
     padding-left: 0.5rem;
     margin: 0 auto;
+    width: inherit;
   }
 }
 
