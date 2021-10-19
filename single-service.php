@@ -4,14 +4,14 @@
         <div class="l-page__inner p-single__inner p-service__inner">
             <p class="p-single__subtitle">service</p>
             <?php
-                $terms = get_the_terms( $post->ID, 'service_category' );
+                $category = get_the_category();
+                $title = $category[0]->category_nicename;
+                $title = str_replace('-',' ',$title);
             ?>
-            <h1 class="c-title c-title-big p-single__title">
-				<?php $title = $terms[0]->slug;
-							echo $title = str_replace('-',' ',$title);
-				?>
-            <span><?php echo $terms[0]->name;?></span>
-            </h1>
+            <h2 class="c-title c-title-big p-single__title">
+            <?php the_field('page_english_title'); ?>
+            <span><?php the_title(); ?></span>
+            </h2>
             <div class="p-page__wrapper">
             <div class="p-page__contents" id="page-content">
                 <?php if(get_field("photo")):?>
@@ -25,7 +25,7 @@
 
         <!-- breadcrumb -->
         <div class="l-breadcrumb-area">
-        <ul class="p-breadcrumb page-uppercase">
+        <ul class="p-breadcrumb">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
             <li><?php the_title(); ?></li>
         </ul>

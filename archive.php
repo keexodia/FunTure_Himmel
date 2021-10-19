@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 <section class="main-content l-archive-content p-archive">
       <div class="l-inner p-archive__inner">
-        <h1 class="c-title c-title-big p-archive__title">
+        <h2 class="c-title c-title-big p-archive__title">
           news
           <span>お知らせ</span>
-        </h1>
+        </h2>
         <div class="p-archive__wrapper">
           <div class="p-archive__contents" id="content">
             <!-- loop -->
@@ -36,8 +36,8 @@
                             <p class="c-category p-top-news__category" style="background-color:<?php echo $this_category_color; ?>;"><a href="<?php echo get_category_link($category->term_id);?>" style="color:<?php echo $this_category_text_color; ?>;"><?php echo $category->name;?></a></p>
                         <?php endforeach;?>
                 </div>
-                <div class="p-archive__post page-uppercase">
-                  <a href="<?php the_permalink();?>" class="page-uppercase"> <?php the_title();?></a>
+                <div class="p-archive__post">
+                  <a href="<?php the_permalink();?>"> <?php the_title();?></a>
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@
             else:?>
             <div class="p-archive__article">
               <div class="p-top-news__group">
-                <div class="p-archive__post page-uppercase">
+                <div class="p-archive__post">
                   <p>投稿記事はありません。</p>
                 </div>
               </div>
@@ -62,7 +62,7 @@
 
     <!-- breadcrumb -->
     <div class="l-breadcrumb-area">
-      <ul class="p-breadcrumb page-uppercase">
+      <ul class="p-breadcrumb">
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
         <li><?php the_title(); ?></li>
       </ul>

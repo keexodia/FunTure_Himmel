@@ -42,7 +42,7 @@
                                     $this_category_color = get_field( 'category-color', 'category_' . $category->term_id );
                                     $this_category_text_color = get_field( 'category-text-color', 'category_' . $category->term_id );
                         ?>
-                            <p class="c-category p-top-news__category" style="background-color:<?php echo $this_category_color; ?>;"><a href="<?php echo get_category_link($category->term_id);?>" style="color:<?php echo $this_category_text_color; ?>;";><?php echo $category->name;?></a></p>
+                            <p class="c-category p-top-news__category" style="background-color:<?php echo $this_category_color; ?>;"><a href="<?php echo get_category_link($category->term_id);?>" style="color:<?php echo $this_category_text_color; ?>;"><?php echo $category->name;?></a></p>
                         <?php endforeach;?>
                         </div>
                         <div class="p-archive__post page-uppercase">

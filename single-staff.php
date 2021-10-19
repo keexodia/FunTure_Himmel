@@ -2,10 +2,10 @@
     <!-- main-content -->
     <section class="main-content l-single-staff p-single-staff">
         <div class="p-single-staff__inner">
-            <h1 class="c-title c-title-big p-single-staff__title">
+            <h2 class="c-title c-title-big p-single-staff__title">
             staff
             <span>スタッフ</span>
-            </h1>
+            </h2>
             <div class="p-single-staff__wrap">
             <div class="p-single-staff__item">
                 <div class="p-single-staff__img">
@@ -96,7 +96,7 @@
     <!-- /. -->
     <!-- breadcrumb -->
         <div class="l-breadcrumb-area">
-        <ul class="p-breadcrumb page-uppercase">
+        <ul class="p-breadcrumb">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
             <li><?php the_title();?></li>
         </ul>
