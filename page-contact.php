@@ -5,7 +5,7 @@
  */
 ?>
 <?php get_header(); ?>
-
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <section class="main-content l-about-content p-contact">
         <div class="l-inner p-about__inner">
             <h1 class="c-title c-title-big p-about__title">
@@ -17,6 +17,7 @@
             </div>
         </div>
     </section>
+<?php endwhile; endif; ?>
 
     <!-- breadcrumb -->
     <div class="l-breadcrumb-area">

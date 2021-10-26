@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section class="main-content l-archive-content p-archive">
-      <div class="l-inner p-archive__inner">
+    <div class="l-inner p-archive__inner">
         <h1 class="c-title c-title-big p-archive__title p-archive__stafftitle">
           STAFF
           <span>スタッフ</span>
@@ -79,6 +79,7 @@
                 endforeach;
                 wp_reset_postdata();
             ?>
+        </div>
     </section>
 
     <!-- breadcrumb -->

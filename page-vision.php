@@ -6,6 +6,8 @@
 ?>
 <?php get_header(); ?>
     <!-- main-content -->
+    
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <section class="main-content l-vision-content p-vision">
     <?php the_content();?>    
     <!-- <div class="p-vision__inner">
@@ -14,7 +16,7 @@
             <span>ビジョン/ミッション</span>
             </h1>
             <div class="p-vision__mv">
-            <img src="<?php echo get_template_directory_uri(); ?>/library/images/vision.jpg" alt="vision" />
+            <img src="<?php //echo get_template_directory_uri(); ?>/library/images/vision.jpg" alt="vision" />
             </div>
             <h2 class="p-vision__think">Think Future, Make My Story</h2>
             <div class="p-vision__text">
@@ -85,6 +87,7 @@
             </div>
         </div>
     </section>
+    <?php endwhile; endif; ?>
     <!-- /.service -->
 
     <!-- breadcrumb -->
