@@ -5,9 +5,9 @@
             <?php //現在のカテゴリーを取得
             $category_slug = get_query_var('category_name');
             $cate_info = get_category_by_slug($category_slug);
-            $cate_info = $cate_info->cat_ID;
-            $category = get_category($cate_info);
-            if($cate_info!=null):
+            $cate_infos = $cate_info->cat_ID;
+            $category = get_category($cate_infos);
+            if($cate_infos!=null):
                 $title = $category->category_nicename;
                 echo $title = str_replace('-',' ',$title);
             else:
@@ -15,7 +15,7 @@
             endif;
             ?>
             <span><?php
-            if($cate_info!=null):
+            if($cate_infos!=null):
                 echo $category->cat_name;
             else:
                 echo 'お知らせ';
@@ -30,7 +30,7 @@
                 $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
                 $args = array(
                     'post_type'      => 'post',
-                    'cat' => $cate_info,
+                    'cat' => $cate_infos,
                     'paged' => $paged,
                 );
                 if($cate_info!==''):
@@ -90,7 +90,14 @@
         <div class="l-breadcrumb-area">
         <ul class="p-breadcrumb page-uppercase">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOME</a></li>
-            <li><?php echo $category->cat_name;?></li>
+            <?php
+            if($cate_info->parent != 0):?>
+                <?php foreach($categories as $category):?>
+                <li><?php echo $category->name;?></li>
+                <?php endforeach;?>
+            <?php else:?>
+                <li><?php echo $categories[0]->name;?></li>
+            <?php endif;?>
         </ul>
         </div>
     <!-- /.breadcrumb -->
